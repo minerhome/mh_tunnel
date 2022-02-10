@@ -1,0 +1,29 @@
+
+# 本 config.yml 是主配置文件
+
+
+# 本地隧道中转加密则使用 encrypt.yml 文件，香港服务器解密使用 decrypt.yml
+use_config: encrypt.yml
+#use_config: decrypt.yml
+
+
+log: 0                  # 是否开启log
+log_file: log.log
+
+
+# 启动时是否检查转发地址的连通性 值为1或0
+check_connection: 0
+
+ping_value: 200
+
+
+# 使用流量混淆，本地机可以开启，香港落地机没必要
+use_mess: 0
+frequency: 1   # 未实现
+random_app:    # 随机上各种网站，使用各种app
+  - baidu
+  - sohu
+  - 163
+  - bilibili
+  - qqmusic
+
