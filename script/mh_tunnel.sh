@@ -20,13 +20,14 @@ cd /mh_tunnel
 
 chmod +x /mh_tunnel/mh_tunnel
 nohup /mh_tunnel/mh_tunnel &
-# rm -rf /etc/rc.local
-# cat >> /etc/rc.local << EOF
-# #!/bin/bash
-# ##!/bin/sh -e
-# nohup /mh_tunnel/mh_tunnel &
-# exit 0
-# EOF
-# chmod +x /etc/rc.local
-# cat /mh_tunnel/mh_tunnel.log
-# exit 0
+
+rm -rf /etc/rc.local
+cat >> /etc/rc.local << EOF
+nohup /mh_tunnel/mh_tunnel &
+exit 0
+EOF
+chmod +x /etc/rc.local
+
+exit 0
+
+
