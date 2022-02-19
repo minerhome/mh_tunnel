@@ -1,0 +1,64 @@
+
+# 加密转发配置 - 安装在本地网络中，把数据加密打包发到落地机上面
+
+# 模式1，表示加密，0，表示解密。
+# 加密就安装在本地，加密后把数据发到远程解密。
+# mode 1表示加密
+mode: 1
+
+port_to:
+  # 具体端口上网站查阅 minerhome.org， 写错了连不上
+
+  12510 : "E池 SSL"    # e池 ssl
+  12515 : "E池 TCP"    # e池 tcp
+
+  12520 : "鱼池 SSL"   # 鱼池 ssl
+  12525 : "鱼池 TCP"   # 鱼池 tcp
+
+  12530 : "币印 SSL"   # SSL
+  12535 : "币印 TCP"   # TCP
+
+  12540 : "凤池 SSL"   # SSL
+  12545 : "凤池 TCP"   # TCP
+
+  12550 : "欧易 SSL"   # SSL
+  12555 : "欧易 TCP"   # TCP
+
+  12560 : "币安 SSL"   # SSL
+  12565 : "币安 TCP"   # TCP
+
+  12570 : "蚂蚁 SSL"   # SSL
+  12575 : "蚂蚁 TCP"   # TCP
+
+  12580 : "HIVE池 SSL"   # SSL
+  12585 : "HIVE池 TCP"   # TCP
+
+  12590 : "2miners SSL"   # SSL
+  12595 : "2miners TCP"   # TCP
+
+  12600 : "独角兽 SSL"   # SSL
+  12605 : "独角兽 TCP"   # TCP
+
+  12610 : "酷池 SSL"   # SSL
+  12615 : "酷池 TCP"   # TCP
+
+  12620 : "ezil池 SSL"   # SSL
+  12625 : "ezil池 TCP"   # TCP
+
+
+  7210 : "鱼池ERGO SSL"    # 鱼池 ERGO SSL
+  7220 : "nanopool-ERGO SSL"    # 鱼池 ERGO SSL
+  7230 : "独角兽ERGO SSL"    # 鱼池 ERGO SSL
+
+
+
+
+  5556: "E池 ETC SSL"    # E池 ETC  SSL
+  5557: "鱼池 ETC SSL"    # 鱼池 ETC  SSL
+
+
+  14881 : "鱼池BTC TCP"    # 鱼池 BTC  TCP
+  14882 : "币安BTC TCP"    # 币安 BTC  TCP
+  14883 : "蚂蚁BTC TCP"    # 蚂蚁 BTC  TCP
+  14884 : "币印BTC TCP"    # 币印 BTC  TCP
+
