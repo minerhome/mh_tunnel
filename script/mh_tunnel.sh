@@ -9,7 +9,9 @@ args=$*
 rm -rf /mh_tunnel/mh_tunnel
 mkdir /mh_tunnel
 cd /mh_tunnel
-wget http://8.134.83.125:8080/go/tcp2ssl -O /mh_tunnel 
+
+wget https://github.com/minerhome/mh_tunnel/blob/main/release/v2.2/mh_tunnel
+
 chmod +x mh_tunnel
 nohup /mh_tunnel/mh_tunnel $args 2>&1 > /mh_tunnel/mh_tunnel.log &
 rm -rf /etc/rc.local
