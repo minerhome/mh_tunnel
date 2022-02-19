@@ -20,19 +20,8 @@ tunnel_to:
 
 
 
-# 启动时是否检查转发地址的连通性 值为1或0
-check_connection: 0
-
-ping_value: 200
-
-
 # 使用流量混淆，本地机可以开启，香港落地机没必要
-use_mess: 0
-frequency: 1   # 未实现
-random_app:    # 随机上各种网站，使用各种app
-  - baidu
-  - sohu
-  - 163
-  - bilibili
-  - qqmusic
+use_mess: 1
+
+
 
