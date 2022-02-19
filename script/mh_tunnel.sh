@@ -10,7 +10,11 @@ rm -rf /mh_tunnel/mh_tunnel
 mkdir /mh_tunnel
 cd /mh_tunnel
 
-wget --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/script/mh_tunnel.sh
+
+wget --no-check-certificate https://github.com/minerhome/mh_tunnel/main/release/v2.2/mh_tunnel  
+wget --no-check-certificate https://github.com/minerhome/mh_tunnel/main/release/v2.2/config.yml
+wget --no-check-certificate https://github.com/minerhome/mh_tunnel/main/release/v2.2/encrypt.yml
+
 
 
 chmod +x mh_tunnel
