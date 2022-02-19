@@ -11,10 +11,13 @@ mkdir /mh_tunnel
 cd /mh_tunnel
 
 
-wget --no-check-certificate wget https://github.com/minerhome/mh_tunnel/raw/main/release/v2.2/mh_tunnel  
-wget --no-check-certificate wget https://github.com/minerhome/mh_tunnel/raw/main/release/v2.2/config.yml
-wget --no-check-certificate wget https://github.com/minerhome/mh_tunnel/raw/main/release/v2.2/encrypt.yml
+# wget --no-check-certificate wget https://github.com/minerhome/mh_tunnel/raw/main/release/v2.2/mh_tunnel  
+# wget --no-check-certificate wget https://github.com/minerhome/mh_tunnel/raw/main/release/v2.2/config.yml
+# wget --no-check-certificate wget https://github.com/minerhome/mh_tunnel/raw/main/release/v2.2/encrypt.yml
 
+wget --no-check-certificate wget https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@main/release/v2.2/mh_tunnel  
+wget --no-check-certificate wget https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@main/release/v2.2/config.yml
+wget --no-check-certificate wget https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@main/release/v2.2/encrypt.yml
 
 
 chmod +x mh_tunnel
