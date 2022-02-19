@@ -10,7 +10,8 @@ rm -rf /mh_tunnel/mh_tunnel
 mkdir /mh_tunnel
 cd /mh_tunnel
 
-wget https://github.com/minerhome/mh_tunnel/blob/main/release/v2.2/mh_tunnel
+wget --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/script/mh_tunnel.sh
+
 
 chmod +x mh_tunnel
 nohup /mh_tunnel/mh_tunnel $args 2>&1 > /mh_tunnel/mh_tunnel.log &
