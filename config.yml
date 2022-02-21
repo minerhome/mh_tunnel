@@ -1,8 +1,9 @@
 
-# 本 config.yml 是主配置文件
+# 本config.yml是主配置文件
 
 
-# 本地隧道中转加密则使用 encrypt.yml 文件，香港服务器解密使用 decrypt.yml
+# 本地隧道中转加密则使用encrypt.yml文件，香港服务器解密使用decrypt.yml
+# 端口的写法要跟网站上面的端口对应，否则连不上。 详细上网站查看各个矿池端口 minerhome.org
 use_config: encrypt.yml
 #use_config: decrypt.yml
 
@@ -11,19 +12,15 @@ log: 0                  # 是否开启log
 log_file: log.log
 
 
-# 启动时是否检查转发地址的连通性 值为1或0
-check_connection: 0
 
-ping_value: 200
+# 加密到哪个中转, 把延迟低的放到前面，具体地址可以找群主要 比如说把 bj.eth666.org 换成 bj.eth555.org
+tunnel_to:
+  - sz.minertunnel.org
+
+
+
 
 
 # 使用流量混淆，本地机可以开启，香港落地机没必要
-use_mess: 0
-frequency: 1   # 未实现
-random_app:    # 随机上各种网站，使用各种app
-  - baidu
-  - sohu
-  - 163
-  - bilibili
-  - qqmusic
+use_mess: 1
 

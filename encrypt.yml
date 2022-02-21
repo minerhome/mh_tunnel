@@ -5,61 +5,63 @@
 # 加密就安装在本地，加密后把数据发到远程解密。
 # mode 1表示加密
 mode: 1
+
 port_to:
-  "16800" : "e.eth666.org:13610"   # 本机测试
-  # "16800" : "192.168.22.130:13610"   # 本机测试
-  # 把本机5555端口的数据转发到落地机的13610端口上面
-  "5555" : "e.eth666.org:13610"
-  "14444" : "e.eth666.org:13611"
+  # 具体端口上网站查阅 minerhome.org， 写错了连不上
 
-  "15555" : "f2.eth666.org:13612"      
-  "6688" : "f2.eth666.org:13613"     
+  12510 : "E池 SSL"    # e池 ssl
+  12515 : "E池 TCP"    # e池 tcp
 
-  "11333" : "p.eth666.org:13614"      
-  "14443" : "p.eth666.org:13615"     
+  12520 : "鱼池 SSL"   # 鱼池 ssl
+  12525 : "鱼池 TCP"   # 鱼池 tcp
 
-  "25555" : "f.eth666.org:13616"      
-  "24444" : "f.eth666.org:13617"       
+  12530 : "币印 SSL"   # SSL
+  12535 : "币印 TCP"   # TCP
 
-  "44333" : "ok.eth666.org:13618"       
-  "13556" : "ok.eth666.org:13619"       
+  12540 : "凤池 SSL"   # SSL
+  12545 : "凤池 TCP"   # TCP
 
-  "22333" : "b.eth666.org:13620"       
-  "11800" : "b.eth666.org:13621"       
+  12550 : "欧易 SSL"   # SSL
+  12555 : "欧易 TCP"   # TCP
 
-  "55333" : "ma.eth666.org:13622"      
-  "24443" : "ma.eth666.org:13623"      
+  12560 : "币安 SSL"   # SSL
+  12565 : "币安 TCP"   # TCP
 
-  "35555" : "h.eth666.org:13624"      
-  "34444" : "h.eth666.org:13625"        
+  12570 : "蚂蚁 SSL"   # SSL
+  12575 : "蚂蚁 TCP"   # TCP
 
-  "45555" : "m.eth666.org:13626"       
-  "44444" : "m.eth666.org:13627"     
+  12580 : "HIVE池 SSL"   # SSL
+  12585 : "HIVE池 TCP"   # TCP
 
-  "8559" : "6.eth666.org:13628"      
-  "8558" : "6.eth666.org:13629"       
+  12590 : "2miners SSL"   # SSL
+  12595 : "2miners TCP"   # TCP
 
-  "15881" : "btc.eth666.org:13710"       
-  "14881" : "btc.eth666.org:13711"        
+  12600 : "独角兽 SSL"   # SSL
+  12605 : "独角兽 TCP"   # TCP
 
-  "15882" : "btc.eth666.org:13712"        
-  "14882" : "btc.eth666.org:13713"        
+  12610 : "酷池 SSL"   # SSL
+  12615 : "酷池 TCP"   # TCP
 
-  "15883" : "btc.eth666.org:13714"        
-  "14883" : "btc.eth666.org:13715"       
-
-  "15884" : "btc.eth666.org:13716"      
-  "14884" : "btc.eth666.org:13717"        
+  12620 : "ezil池 SSL"   # SSL
+  12625 : "ezil池 TCP"   # TCP
 
 
-  "5556" : "etc.eth666.org:13810"      
-  "14446" : "etc.eth666.org:13811"        
-  "5557" : "etc.eth666.org:13812"      
-  "14447" : "etc.eth666.org:13813"        
+  7210 : "鱼池ERGO SSL"    # 鱼池 ERGO SSL
+  7220 : "nanopool-ERGO SSL"    # 鱼池 ERGO SSL
+  7230 : "独角兽ERGO SSL"    # 鱼池 ERGO SSL
 
-  "7210" : "ergo.eth666.org:13910"     
-  "7211" : "ergo.eth666.org:13911"     
-  "7220" : "ergo.eth666.org:13912"     
-  "7221" : "ergo.eth666.org:13913"     
-  "7230" : "ergo.eth666.org:13914"     
-  "7231" : "ergo.eth666.org:13915"     
+
+
+
+  5556: "E池 ETC SSL"    # E池 ETC  SSL
+  14446: "E池 ETC TCP"    # E池 ETC  TCP
+
+  5557: "鱼池 ETC SSL"    # 鱼池 ETC  SSL
+  14447: "鱼池 ETC TCP"    # 鱼池 ETC  TCP
+
+
+  14881 : "鱼池BTC TCP"    # 鱼池 BTC  TCP
+  14882 : "币安BTC TCP"    # 币安 BTC  TCP
+  14883 : "蚂蚁BTC TCP"    # 蚂蚁 BTC  TCP
+  14884 : "币印BTC TCP"    # 币印 BTC  TCP
+

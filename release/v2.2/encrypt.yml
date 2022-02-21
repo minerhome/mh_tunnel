@@ -54,7 +54,10 @@ port_to:
 
 
   5556: "E池 ETC SSL"    # E池 ETC  SSL
+  14446: "E池 ETC TCP"    # E池 ETC  TCP
+
   5557: "鱼池 ETC SSL"    # 鱼池 ETC  SSL
+  14447: "鱼池 ETC TCP"    # 鱼池 ETC  TCP
 
 
   14881 : "鱼池BTC TCP"    # 鱼池 BTC  TCP
