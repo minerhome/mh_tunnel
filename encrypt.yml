@@ -9,81 +9,81 @@ mode: 1
 port_to:
   # 具体端口上网站查阅 minerhome.org， 写错了连不上
   12510 : "ETH - 显卡 - E池 ssl"
-  12515 : "ETH - 显卡 - E池 tcp"
+#  12515 : "ETH - 显卡 - E池 tcp"
 
   12520 : "ETH - 显卡 - 鱼池 ssl"
-  12525 : "ETH - 显卡 - 鱼池 tcp"
+#  12525 : "ETH - 显卡 - 鱼池 tcp"
 
   12530 : "ETH - 显卡 - 币印 ssl"
-  12535 : "ETH - 显卡 - 币印 tcp"
-
+#  12535 : "ETH - 显卡 - 币印 tcp"
+#
   12540 : "ETH - 显卡 - 凤池 ssl"
-  12545 : "ETH - 显卡 - 凤池 tcp"
-
+#  12545 : "ETH - 显卡 - 凤池 tcp"
+#
   12550 : "ETH - 显卡 - 欧易 ssl"
-  12555 : "ETH - 显卡 - 欧易 tcp"
-
+#  12555 : "ETH - 显卡 - 欧易 tcp"
+#
   12560 : "ETH - 显卡 - 币安 ssl"
-  12565 : "ETH - 显卡 - 币安 tcp"
+#  12565 : "ETH - 显卡 - 币安 tcp"
 
   12570 : "ETH - 显卡 - 蚂蚁 ssl"
-  12575 : "ETH - 显卡 - 蚂蚁 tcp"
-
+#  12575 : "ETH - 显卡 - 蚂蚁 tcp"
+#
   12580 : "ETH - 显卡 - HIVE池 ssl"
-  12585 : "ETH - 显卡 - HIVE池 tcp"
+#  12585 : "ETH - 显卡 - HIVE池 tcp"
 
   12590 : "ETH - 显卡 - 2miners ssl"
-  12595 : "ETH - 显卡 - 2miners tcp"
-
+#  12595 : "ETH - 显卡 - 2miners tcp"
+#
   12600 : "ETH - 显卡 - 独角兽 ssl"
-  12605 : "ETH - 显卡 - 独角兽 tcp"
-
-  12620 : "ETH - 显卡 - ezil池 ssl"
-  12625 : "ETH - 显卡 - ezil池 tcp"
-
-
-#  # ERGO
-  7210 : "ERGO - 鱼池 ssl"
-  7211 : "ERGO - 鱼池 tcp"
-
-  7220 : "ERGO - nanopool ssl"
-  7221 : "ERGO - nanopool tcp"
-
-  7230 : "ERGO - 独角兽 ssl"
-  7231 : "ERGO - 独角兽 tcp"
-
-  7240 : "ERGO - 2miners ssl"
-  7241 : "ERGO - 2miners tcp"
-
-  7250 : "ERGO - E池 ssl"
-  7251 : "ERGO - E池 tcp"
+#  12605 : "ETH - 显卡 - 独角兽 tcp"
+#
+  # 12620 : "ETH - 显卡 - ezil池 ssl"
+#  12625 : "ETH - 显卡 - ezil池 tcp"
 
 
-#  # ETC 以太经典
-#   5556  : "ETC - E池 ssl"
-#   14446 : "ETC - E池  tcp"
-#   5557  : "ETC - 鱼池  ssl"
-#   14447 : "ETC - 鱼池  tcp"
-#   5558  : "ETC - 凤池  ssl"
-#   14448 : "ETC - 凤池  tcp"
+# # ERGO
+#  7210 : "ERGO - 鱼池 ssl"
+#  7211 : "ERGO - 鱼池 tcp"
+#
+#  7220 : "ERGO - nanopool ssl"
+#  7221 : "ERGO - nanopool tcp"
+#
+#  7230 : "ERGO - 独角兽 ssl"
+#  7231 : "ERGO - 独角兽 tcp"
+#
+#  7240 : "ERGO - 2miners ssl"
+#  7241 : "ERGO - 2miners tcp"
+#
+#  7250 : "ERGO - E池 ssl"
+#  7251 : "ERGO - E池 tcp"
+
+#
+# # ETC 以太经典
+#  5556  : "ETC - E池 ssl"
+#  14446 : "ETC - E池  tcp"
+#  5557  : "ETC - 鱼池  ssl"
+#  14447 : "ETC - 鱼池  tcp"
+#  5558  : "ETC - 凤池  ssl"
+#  14448 : "ETC - 凤池  tcp"
 
 
-#   # BTC  比特币 专业机
-#   14881 : "BTC 比特币 专业机 - 鱼池 tcp"
-#   14882 : "BTC 比特币 专业机 - 币安 tcp"
-#   14883 : "BTC 比特币 专业机 - 蚂蚁 tcp"
-#   14884 : "BTC 比特币 专业机 - 币印 tcp"
+#  # BTC  比特币 专业机
+#  14881 : "BTC 比特币 专业机 - 鱼池 tcp"
+#  14882 : "BTC 比特币 专业机 - 币安 tcp"
+#  14883 : "BTC 比特币 专业机 - 蚂蚁 tcp"
+#  14884 : "BTC 比特币 专业机 - 币印 tcp"
 
 
-#   # ETH 显卡 专业机
-#   14515 : "ETH 专业机 - E池 tcp"
-#   14525 : "ETH 专业机 - 鱼池 tcp"
-#   14535 : "ETH 专业机 - 币印 tcp"
-#   14545 : "ETH 专业机 - 凤池 tcp"
-#   14575 : "ETH 专业机 - 蚂蚁 tcp"
-
-#   # LTC 莱特币 专业机
-#   12715 : "LTC 莱特币 专业机 - 鱼池 tcp"
-#   12725 : "LTC 莱特币 专业机 - 蚂蚁 tcp"
-#   12735 : "LTC 莱特币 专业机 - 币印 tcp"
-
+#  # ETH 显卡 专业机
+#  14515 : "ETH 专业机 - E池 tcp"
+#  14525 : "ETH 专业机 - 鱼池 tcp"
+#  14535 : "ETH 专业机 - 币印 tcp"
+#  14545 : "ETH 专业机 - 凤池 tcp"
+#  14575 : "ETH 专业机 - 蚂蚁 tcp"
+#
+#  # LTC 莱特币 专业机
+#  12715 : "LTC 莱特币 专业机 - 鱼池 tcp"
+#  12725 : "LTC 莱特币 专业机 - 蚂蚁 tcp"
+#  12735 : "LTC 莱特币 专业机 - 币印 tcp"
+#
