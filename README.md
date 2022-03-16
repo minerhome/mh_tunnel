@@ -20,8 +20,8 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 如E池可以写
 stratum+ssl://127.0.0.1:12510
 
-![img_1.png](iamges/1.png)
-![img_2.png](imgages/2.png)
+
 
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/1.png"></img>
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/2.png"></img>
 
