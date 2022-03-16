@@ -21,6 +21,7 @@ wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tun
 chmod +x /root/mh_tunnel/*
 mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
 
+systemctl enable mh_tunnel
 systemctl restart mh_tunnel
 
 
