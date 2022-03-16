@@ -5,6 +5,16 @@ mkdir /mh_tunnel
 
 cd /mh_tunnel
 
+
+
+
+wget --no-check-certificate https://github.com/minerhome/mh_tunnel/releases/v4.0.0/mh_tunnel  -O /mh_tunnel/mh_tunnel
+
+wget --no-check-certificate https://github.com/minerhome/mh_tunnel/releases/v4.0.0/mh_tunnel  -O /mh_tunnel/mh_tunnel
+
+
+
+
 wget --no-check-certificate  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@main/release/v4.0.0/mh_tunnel  -O /mh_tunnel/mh_tunnel
 wget --no-check-certificate  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@main/release/v4.0.0/tunnel  -O /mh_tunnel/tunnel
 wget --no-check-certificate  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@main/release/v4.0.0/config.yml  -O /mh_tunnel/config.yml
