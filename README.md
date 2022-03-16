@@ -19,3 +19,9 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 如果是hiveos则可以每一台都安装一下。然后飞行表就写本机地址
 如E池可以写
 stratum+ssl://127.0.0.1:12510
+
+
+
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/1.png"></img>
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/2.png"></img>
+
