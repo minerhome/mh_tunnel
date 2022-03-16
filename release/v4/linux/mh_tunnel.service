@@ -1,14 +1,15 @@
 [Unit]
 Description=minerhome tunnel  service
-After=network.target
-
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
 
 [Service]
-Type=forking
-ExecStart=/mh_tunnel/run_tunnel.sh
-TimeoutSec=0
-RemainAfterExit=yes
+Type=simple
+User=root
+Restart=always
+RestartSec=5
+DynamicUser=true
+ExecStart=cd /mh_tunnel &  mh_tunnel
 
 [Install]
 WantedBy=multi-user.target
-
