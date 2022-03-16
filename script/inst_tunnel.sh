@@ -7,14 +7,11 @@ cd /root/mh_tunnel
 
 
 
-
-
-
-wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/config.yml   -O /root/mh_tunnel
-wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/encrypt.yml   -O /root/mh_tunnel
-wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/mh_tunnel   -O /root/mh_tunnel
-wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/tunnel   -O /root/mh_tunnel
-wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/mh_tunnel.service   -O /root/mh_tunnel
+wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/config.yml   
+wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/encrypt.yml  
+wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/mh_tunnel  
+wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/tunnel  
+wget https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/mh_tunnel.service   
 
 
 
