@@ -9,7 +9,7 @@ User=root
 Restart=always
 RestartSec=5
 DynamicUser=true
-ExecStart=/root/mh_tunnel/run_mh_tunnel.sh
+ExecStart=bash /root/mh_tunnel/run_mh_tunnel.sh
 
 [Install]
 WantedBy=multi-user.target
