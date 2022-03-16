@@ -4,7 +4,7 @@ After=network-online.target
 Wants=network-online.target systemd-networkd-wait-online.service
 
 [Service]
-Type=simple
+Type=fork
 User=root
 Restart=always
 RestartSec=5
