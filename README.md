@@ -25,3 +25,6 @@ stratum+ssl://127.0.0.1:12510
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/1.png"></img>
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/2.png"></img>
 
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/3.png"></img>
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/4.png"></img>
+
