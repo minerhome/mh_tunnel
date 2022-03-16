@@ -1,0 +1,30 @@
+
+# 本config.yml是主配置文件
+
+
+# 本地隧道中转加密则使用encrypt.yml文件，香港服务器解密使用decrypt.yml
+# 端口的写法要跟网站上面的端口对应，否则连不上。 详细上网站查看各个矿池端口 minerhome.org
+use_config: encrypt.yml
+#use_config: decrypt.yml
+
+
+log: 0                  # 是否开启log
+log_file: log.log
+
+
+
+# 具体地址可以找群主要， 大户可以拿专用IP
+#tunnel_to:
+#   - mh.minertunnel.org
+
+
+
+
+
+# 找线路少的服务器。可以调这个数值，多了怕掉线，少了又找不到合适的服务器
+connection_limit: 1800
+
+# 使用流量混淆，随机发送一些垃圾数据，模拟正常为上网
+#use_mess: 1
+
+
