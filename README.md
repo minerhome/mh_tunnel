@@ -22,3 +22,6 @@ stratum+ssl://127.0.0.1:12510
 
 ![img_1.png](iamges/1.png)
 ![img_2.png](imgages/2.png)
+
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/1.png"></img>
+
