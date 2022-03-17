@@ -14,16 +14,14 @@ log_file: log.log
 
 
 # 具体地址可以找群主要， 大户可以拿专用IP
-# tunnel_to:
-  # - sz.minertunnel.org
+#tunnel_to:
+#   - mh.minertunnel.org
 
 
 
-
-
-# 找线路少的服务器。可以调这个数值，多了怕掉线，少了又找不到合适的服务器
-connection_limit: 1500
 
 # 使用流量混淆，随机发送一些垃圾数据，模拟正常为上网
-use_mess: 1
+mess: 1
+
+
 

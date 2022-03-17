@@ -21,5 +21,7 @@ log_file: log.log
 
 
 # 使用流量混淆，随机发送一些垃圾数据，模拟正常为上网
-#use_mess: 1
+mess: 1
+
+
 

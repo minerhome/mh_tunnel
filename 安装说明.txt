@@ -63,3 +63,21 @@ youtube   https://www.youtube.com/channel/UC9TUiMp6Zg33x3PSNUlbVOw
 加Q群： 254689058
 联系群主： QQ248135618
 
+=========================================================
+
+win版用法
+参考以上，直接下载打开就可以
+
+=========================================================
+
+linux版用法
+目前支持 ubuntu debian hiveos
+直接一键安装
+
+# 可直连github的服务器
+bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/inst_tunnel.sh)
+
+# 无法访问github的大陆服务器
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/inst_tunnel.sh)
+
+=========================================================
