@@ -13,7 +13,7 @@ start  mh_tunnel.exe
 
 
 
-::pause
+:::pause
 
 
 
