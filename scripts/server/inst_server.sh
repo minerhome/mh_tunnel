@@ -2,7 +2,7 @@
 
 [[ $(id -u) != 0 ]] && echo -e "请使用root权限运行安装脚本， 通过sudo su root切换再来运行" && exit 1
 
-name = "端对端加密隧道解密端（服务端）"
+name = "端对端加密隧道 - 解密端（服务端）"
 
 cmd="apt-get"
 if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl) ]]; then
@@ -19,7 +19,7 @@ check_done() {
         echo -e "\n\n" 
         echo -e "-----------------------------------"
         echo -e "\n" 
-        echo -e "安装成功，${name} 已经在运行......" 
+        echo -e "安装成功，端对端加密隧道 - 解密端（服务端）- 已经在运行......" 
         echo -e "详细用法请上网站查阅 https://minerhome.org \n" 
         echo -e "\n" 
         echo -e "-----------------------------------"
@@ -82,7 +82,7 @@ install() {
 
 
 echo "======================================================="
-echo "${name}一键安装工具 - 矿工之家 - minerhome.org"
+echo "端对端加密隧道 - 解密端（服务端）- 一键安装工具 - 矿工之家 - minerhome.org"
 echo "默认安装到/root/mh_server"
 echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
@@ -90,7 +90,7 @@ echo "======================================================="
 
 change_limit
 install
-echo "检查是否安装成功，稍等"
+echo "正在检查是否安装成功，请稍等......"
 sleep 20s
 check_done
 
