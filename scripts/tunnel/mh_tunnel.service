@@ -1,0 +1,14 @@
+[Unit]
+Description=minerhome tunnel  service
+After=network.target
+
+
+[Service]
+Type=forking
+TimeoutSec=10
+RemainAfterExit=yes
+ExecStart=/root/mh_tunnel/run_mh_tunnel.sh
+
+[Install]
+WantedBy=multi-user.target
+
