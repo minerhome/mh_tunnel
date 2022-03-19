@@ -43,7 +43,7 @@ stratum+ssl://127.0.0.1:12510
 ## 搭建服务器，解密服务器
 建议选香港服务器， 可选阿里云的香港服务器。通过加密数据过来的，目前都不会查封。
 ```bash
-# 可直连github的服务器
+# 可直连github的服务器 - 香港服务器上安装选这个
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/inst_server.sh)
 
 #  国内的选这个脚本
