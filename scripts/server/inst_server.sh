@@ -19,7 +19,7 @@ check_done() {
         echo -e "\n\n" 
         echo -e "-----------------------------------"
         echo -e "\n" 
-        echo -e "安装成功，" $name "已经在运行......" 
+        echo -e "安装成功，${name} 已经在运行......" 
         echo -e "详细用法请上网站查阅 https://minerhome.org \n" 
         echo -e "\n" 
         echo -e "-----------------------------------"
@@ -82,7 +82,7 @@ install() {
 
 
 echo "======================================================="
-echo "$name 一键安装工具 - 矿工之家 - minerhome.org"
+echo "${name}一键安装工具 - 矿工之家 - minerhome.org"
 echo "默认安装到/root/mh_server"
 echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
