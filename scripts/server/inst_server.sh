@@ -70,7 +70,7 @@ install() {
 
     systemctl enable mh_server
     systemctl restart mh_server
-    sleep 10s
+  
 
 }
 
@@ -88,8 +88,11 @@ echo "======================================================="
 
 change_limit
 install
+echo "检查是否安装成功，稍等"
+sleep 20s
 check_done
 
+ 
  
 
 
