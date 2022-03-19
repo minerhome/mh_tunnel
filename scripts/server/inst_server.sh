@@ -13,7 +13,7 @@ fi
 
 
 check_done() {
-    if netstat -antpl | grep -q "mh_server"; then
+    if netstat -antpl | grep -q "mh_tunnel"; then
         echo -e "\n\n" 
         echo -e "-----------------------------------"
         echo -e "\n" 
