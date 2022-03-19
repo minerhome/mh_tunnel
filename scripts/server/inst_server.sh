@@ -36,12 +36,12 @@ check_done() {
 change_limit(){
     num="n"
     if [ $(grep -c "root soft nofile" /etc/security/limits.conf) -eq '0' ]; then
-        echo "root soft nofile 102400" >>/etc/security/limits.conf
+        echo "root soft nofile 65535" >>/etc/security/limits.conf
         num="y"
     fi
 
     if [[ "$num" = "y" ]]; then
-        echo "连接数限制已修改为102400,重启服务器后生效"
+        echo "连接数限制已修改为 65535, 重启服务器后生效"
     else
         echo -n "当前连接数限制："
         ulimit -n
