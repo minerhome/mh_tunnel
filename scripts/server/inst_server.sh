@@ -90,6 +90,7 @@ echo "======================================================="
 
 change_limit
 install
+clear
 echo "正在检查是否安装成功，请稍等......"
 sleep 20s
 check_done
