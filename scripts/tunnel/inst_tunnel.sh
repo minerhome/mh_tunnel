@@ -20,7 +20,7 @@ check_done() {
         echo -e "-----------------------------------"
         echo -e "\n" 
         echo -e "安装成功，$name 已经在运行......" 
-        echo -e "详细用法请上 minerhome.org 网站查阅\n" 
+        echo -e "详细用法请上 https://minerhome.org 网站查阅\n" 
         echo -e "\n" 
         echo -e "-----------------------------------"
         echo -e "\n" 
