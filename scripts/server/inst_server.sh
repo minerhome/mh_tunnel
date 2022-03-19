@@ -19,7 +19,7 @@ check_done() {
         echo -e "\n\n" 
         echo -e "-----------------------------------"
         echo -e "\n" 
-        echo -e "安装成功，$name 已经在运行......" 
+        echo -e "安装成功，" $name "已经在运行......" 
         echo -e "详细用法请上网站查阅 https://minerhome.org \n" 
         echo -e "\n" 
         echo -e "-----------------------------------"
