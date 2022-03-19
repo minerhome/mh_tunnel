@@ -70,7 +70,7 @@ install() {
 
     systemctl enable mh_server
     systemctl restart mh_server
-
+    sleep 10s
 
 }
 
