@@ -51,9 +51,15 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 ```
 
 
-## 设置本地加密走自己的解密服务器
-没有设置则默认走矿工之家的默认公用服务器。
+## 设置
+### 本地加密走自己的解密服务器
+没有设置则默认走矿工之家的默认公用服务器。如果你通过上一步已经自己搭建了一个加密服务器，则可以在这里设置。使本地的加密隧道走你自己的服务器。
+```bash
+# 可直连github的服务器 - 香港服务器上安装选这个
+bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/setup.sh)
 
-一键安装命令待更新。
+#  国内的选这个脚本
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/setup_cdn.sh)
+```
 
 
