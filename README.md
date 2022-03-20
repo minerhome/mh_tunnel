@@ -8,13 +8,25 @@
 今天，终于大家解放了。可以自己搭建专用的端对端加密隧道。目前最为安全。虽然损失一点点算力。
 
 
-# 搭建本地端对端加密隧道
+
+
+# 一，搭建自己的解密服务器
+建议选香港服务器， 可选阿里云的香港服务器。通过加密数据过来的，目前都不会查封。
+自己不搭建的话，就走矿工之家的公用线路。
+
+```bash
+# 可直连github的服务器 - 香港服务器上安装选这个
+bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/inst_server.sh)
+
+```
+
+# 二， 搭建本地端对端加密隧道
 目前只有eth， 大池基本上都可以用。
 
-## Windows 直接下载运行
+### Windows 直接下载运行
 下载后，双击 前台运行 那个文件就行。
 
-## Liunx, ubuntu, debian, centos,  hiveos 基本上通用了。
+### Liunx, ubuntu, debian, centos,  hiveos 基本上通用了。
 
 ```bash
 # 可直连github的服务器
@@ -26,32 +38,8 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 
 安装之后自动在后台运行了。矿机只需连接该加密机器就行。
 
-如果是hiveos则可以每一台都安装一下。然后飞行表就写本机地址
-如E池可以写
-stratum+ssl://127.0.0.1:12510
 
-
-
-<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/1.png"></img>
-<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/2.png"></img>
-
-<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/3.png"></img>
-<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/4.png"></img>
-
-
-
-## 搭建服务器，解密服务器
-建议选香港服务器， 可选阿里云的香港服务器。通过加密数据过来的，目前都不会查封。
-```bash
-# 可直连github的服务器 - 香港服务器上安装选这个
-bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/inst_server.sh)
-
-#  国内的选这个脚本
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh)
-```
-
-
-## 设置
+# 三，设置
 ### 本地加密走自己的解密服务器
 没有设置则默认走矿工之家的默认公用服务器。如果你通过上一步已经自己搭建了一个加密服务器，则可以在这里设置。使本地的加密隧道走你自己的服务器。
 ```bash
@@ -62,4 +50,17 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/s
 bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/setup_cdn.sh)
 ```
 
+
+# 四，开始双向加密挖矿，不惧查水表。
+
+如果是hiveos则可以每一台都安装一下。然后飞行表就写本机地址
+如E池可以写
+stratum+ssl://127.0.0.1:12510
+各个挖矿软件的设置，可能是不一样的。参考各自说明。
+
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/1.png"></img>
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/2.png"></img>
+
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/3.png"></img>
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/4.png"></img>
 
