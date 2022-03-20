@@ -73,7 +73,7 @@ stratum+ssl://127.0.0.1:12510
 
 
 #### 联系我们
-github:   https://github.com/minerhome/mh_tunnel
-油管：    https://www.youtube.com/channel/UC9TUiMp6Zg33x3PSNUlbVOw
-网站：    https://minerhome.org
-QQ群：    171763813
+github:   https://github.com/minerhome/mh_tunnel<br />
+油管：    https://www.youtube.com/channel/UC9TUiMp6Zg33x3PSNUlbVOw<br />
+网站：    https://minerhome.org<br />
+QQ群：    171763813<br />
