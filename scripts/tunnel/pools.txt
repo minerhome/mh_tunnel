@@ -1,3 +1,4 @@
+test.test.com
 ss.antpool.com
 stratum-ltc.antpool.com
 stratum-eth.antpool.com
