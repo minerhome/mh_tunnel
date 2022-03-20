@@ -86,4 +86,21 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/s
 # 国内选这个一键安装
 bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/inst_tunnel_cdn.sh)
 
-=========================================================
+==================================================================
+
+自己搭建端对端加密隧道的顺序
+
+一，先在服务器上面搭建解密转发
+
+
+
+二，再在本地搭加密隧道
+
+
+
+三，设置本地的隧道通过自己的服务器转发出去
+
+
+
+
+
