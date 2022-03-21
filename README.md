@@ -45,10 +45,10 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 #### 30g算力以上也可以找我领取低抽线路
 没有设置则默认走矿工之家的默认公用服务器。如果你通过上一步已经自己搭建了一个加密服务器，则可以在这里设置。使本地的加密隧道走你自己的服务器。
 #### 目前的设置选项有：
-1，矿机是否开启屏蔽内核抽水
-2, 矿机是否模拟正常上网
-3，矿机是否使用自己的香港服务器ip
-
+1，矿机是否开启屏蔽内核抽水   <br />
+2, 矿机是否模拟正常上网          <br />
+3，矿机是否使用自己的香港服务器ip         <br />
+##### win的直接双击 设置 运行， linux的要输入以下命令
 ```bash
 # 可直连github的服务器 - 香港服务器上安装选这个
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/setup.sh)
@@ -74,6 +74,6 @@ stratum+ssl://127.0.0.1:12510
 ***
 #### 联系我们
 github:   https://github.com/minerhome/mh_tunnel<br />
-油管：    https://www.youtube.com/channel/UC9TUiMp6Zg33x3PSNUlbVOw<br />
+油管：    https://www.youtube.com/channel/UC9TUiMp6Zg33x3PSNUlbVOw    <br />
 网站：    https://minerhome.org<br />
 QQ群：    171763813<br />
