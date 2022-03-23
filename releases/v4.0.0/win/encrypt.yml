@@ -9,38 +9,37 @@ mode: 1
 port_to:
   # 具体端口上网站查阅 minerhome.org， 写错了连不上
   12510 : "ETH 显卡 - E池 ssl"
-#  12515 : "ETH 显卡 - E池 tcp"
+  12515 : "ETH 显卡 - E池 tcp"
 
   12520 : "ETH 显卡 - 鱼池 ssl"
-#  12525 : "ETH 显卡 - 鱼池 tcp"
+  12525 : "ETH 显卡 - 鱼池 tcp"
 
   12530 : "ETH 显卡 - 币印 ssl"
-#  12535 : "ETH 显卡 - 币印 tcp"
+  12535 : "ETH 显卡 - 币印 tcp"
 #
   12540 : "ETH 显卡 - 凤池 ssl"
-#  12545 : "ETH 显卡 - 凤池 tcp"
+  12545 : "ETH 显卡 - 凤池 tcp"
 #
-  12550 : "ETH 显卡 - 欧易 ssl"
+#  12550 : "ETH 显卡 - 欧易 ssl"
 #  12555 : "ETH 显卡 - 欧易 tcp"
 #
   12560 : "ETH 显卡 - 币安 ssl"
-#  12565 : "ETH 显卡 - 币安 tcp"
+  12565 : "ETH 显卡 - 币安 tcp"
 
   12570 : "ETH 显卡 - 蚂蚁 ssl"
-#  12575 : "ETH 显卡 - 蚂蚁 tcp"
+  12575 : "ETH 显卡 - 蚂蚁 tcp"
 #
   12580 : "ETH 显卡 - HIVE池 ssl"
-#  12585 : "ETH 显卡 - HIVE池 tcp"
+  12585 : "ETH 显卡 - HIVE池 tcp"
 
   12590 : "ETH 显卡 - 2miners ssl"
-
-#  12595 : "ETH 显卡 - 2miners tcp"
+  12595 : "ETH 显卡 - 2miners tcp"
 #
   12600 : "ETH 显卡 - 独角兽 ssl"
-#  12605 : "ETH 显卡 - 独角兽 tcp"
+  12605 : "ETH 显卡 - 独角兽 tcp"
 #
   12620 : "ETH 显卡 - ezil池 ssl"
-#  12625 : "ETH 显卡 - ezil池 tcp"
+  12625 : "ETH 显卡 - ezil池 tcp"
 
 
 # # ERGO
@@ -63,15 +62,15 @@ port_to:
 #
 # # ETC 以太经典
   5556  : "ETC - E池 ssl"
-#  14446 : "ETC - E池  tcp"
+  14446 : "ETC - E池  tcp"
   5557  : "ETC - 鱼池  ssl"
-#  14447 : "ETC - 鱼池  tcp"
+  14447 : "ETC - 鱼池  tcp"
   5558  : "ETC - 凤池  ssl"
-#  14448 : "ETC - 凤池  tcp"
+  14448 : "ETC - 凤池  tcp"
   5559  : "ETC - 2miners  ssl"
-#  14449 : "ETC - 2miners  tcp"
+  14449 : "ETC - 2miners  tcp"
   5560  : "ETC - 独角兽  ssl"
-#  14450 : "ETC - 独角兽  tcp"
+  14450 : "ETC - 独角兽  tcp"
 
 
 #  # ETH 显卡 专业机
