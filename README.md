@@ -23,7 +23,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/s
 
 ```
 
-# 二， 安装加密端 - 本地端
+# 二， 安装加密混淆 - 本地端
 主流币，主流池基本上都可以用。
 
 ### Windows 直接下载运行
