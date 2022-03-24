@@ -25,6 +25,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/s
 
 # 二， 安装加密混淆 - 本地端
 主流币，主流池基本上都可以用。
+ETH, ETC, LTC, BTC等不断增加，完善中。
 
 ### Windows 直接下载运行
 下载后，双击 前台运行 那个文件就行。
