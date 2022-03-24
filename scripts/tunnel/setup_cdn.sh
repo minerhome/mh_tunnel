@@ -4,6 +4,7 @@
 
 name = "端对端加密隧道 - 加密端（本地端）"
 
+
 cmd="apt-get"
 if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl) ]]; then
     if [[ $(command -v yum) ]]; then
@@ -19,7 +20,7 @@ check_done() {
         echo -e "\n\n" 
         echo -e "-----------------------------------"
         echo -e "\n" 
-        echo -e "安装成功，端对端加密隧道 - 加密端（本地端）- 已经在运行......" 
+        echo -e "安装成功， ${name} - 已经在运行......" 
         echo -e "详细用法请上 https://minerhome.org 网站查阅\n" 
         echo -e "\n" 
         echo -e "-----------------------------------"
