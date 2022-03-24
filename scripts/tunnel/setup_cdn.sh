@@ -35,9 +35,8 @@ check_done() {
 
 setup() {
 
-    cd /root/mh_tunnel
-    rm mh_setup
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_setup
+    cd /root/mh_tunnel   
+    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_setup  -O /root/mh_tunnel/mh_setup
     chmod +x /root/mh_tunnel/*
     ./mh_setup
 }

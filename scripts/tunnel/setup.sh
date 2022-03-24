@@ -36,7 +36,7 @@ check_done() {
 setup() {
 
     cd /root/mh_tunnel
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/mh_setup  
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/mh_setup   -O /root/mh_tunnel/mh_setup
     chmod +x /root/mh_tunnel/*
     ./mh_setup
 }
@@ -52,11 +52,11 @@ install() {
     mkdir /root/mh_tunnel
     cd /root/mh_tunnel
 
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/config.yml   
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/encrypt.yml  
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/mh_tunnel  
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/mh_tunnel.service   
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/run_mh_tunnel.sh  
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/config.yml    -O /root/mh_tunnel/config.yml
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/mh_tunnel     -O /root/mh_tunnel/mh_tunnel
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/mh_tunnel.service      -O /root/mh_tunnel/mh_tunnel.service 
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/run_mh_tunnel.sh     -O /root/mh_tunnel/run_mh_tunnel.sh
 
     chmod +x /root/mh_tunnel/*
     mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
