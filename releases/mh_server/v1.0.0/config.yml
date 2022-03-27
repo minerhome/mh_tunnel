@@ -1,14 +1,6 @@
 
 # 本config.yml是主配置文件
 
-# 服务端解密， 不填表示客户端加密， 客户端不读取这个参数
-server: 1
-
-# 客户端默认屏蔽内核抽水， 可以取消
-nodevfee: 0
-
-# 使用流量混淆，随机发送一些垃圾数据，模拟正常上网，用于客户端
-mess: 0
 
 
 # 本地隧道中转加密则使用encrypt.yml文件，香港服务器解密使用decrypt.yml
@@ -25,5 +17,7 @@ log_file: log.log
 # 具体地址可以找群主要， 大户可以拿专用IP， 服务端不读取这个参数
 #tunnel_to:
 #   - mh.minertunnel.org
+
+
 
 

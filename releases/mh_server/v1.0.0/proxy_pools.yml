@@ -2,20 +2,36 @@ server:
     - port: "12510"
       ssl: 1
       proxypool: tcp://asia2.ethermine.org:14444
+    - port: "12515"
+      ssl: 0
+      proxypool: tcp://asia2.ethermine.org:14444
 
 
     - port: "12520"
       ssl: 1
       proxypool: tcp://eth.f2pool.com:6688
+    - port: "12525"
+      ssl: 0
+      proxypool: tcp://eth.f2pool.com:6688
+
+
 
 
     - port: "12530"
       ssl: 1
       proxypool: tcp://eth.ss.poolin.me:443
+    - port: "12535"
+      ssl: 0
+      proxypool: tcp://eth.ss.poolin.me:443
+
+
 
 
     - port: "12540"
       ssl: 1
+      proxypool: tcp://eth-hke.flexpool.io:13271
+    - port: "12545"
+      ssl: 0
       proxypool: tcp://eth-hke.flexpool.io:13271
 
 
@@ -23,11 +39,17 @@ server:
     - port: "12550"
       ssl: 1
       proxypool: tcp://stratum.okpool.me:3556
+    - port: "12555"
+      ssl: 0
+      proxypool: tcp://stratum.okpool.me:3556
 
 
 
     - port: "12560"
       ssl: 1
+      proxypool: tcp://ethash.poolbinance.com:443
+    - port: "12565"
+      ssl: 0
       proxypool: tcp://ethash.poolbinance.com:443
 
 
@@ -35,11 +57,17 @@ server:
     - port: "12570"
       ssl: 1
       proxypool: tcp://stratum-eth.antpool.com:443
+    - port: "12575"
+      ssl: 0
+      proxypool: tcp://stratum-eth.antpool.com:443
 
 
 
     - port: "12580"
       ssl: 1
+      proxypool: tcp://eth.hiveon.com:14444
+    - port: "12585"
+      ssl: 0
       proxypool: tcp://eth.hiveon.com:14444
 
 
@@ -47,7 +75,9 @@ server:
     - port: "12590"
       ssl: 1
       proxypool: tcp://asia-eth.2miners.com:2020
-
+    - port: "12595"
+      ssl: 0
+      proxypool: tcp://asia-eth.2miners.com:2020
 
 
 
@@ -55,11 +85,16 @@ server:
     - port: "12600"
       ssl: 1
       proxypool: tcp://eth.666pool.com:8558
-
+    - port: "12605"
+      ssl: 0
+      proxypool: tcp://eth.666pool.com:8558
 
 
     - port: "12620"
       ssl: 1
+      proxypool:  tcp://hk.ezil.me:5555
+    - port: "12625"
+      ssl: 0
       proxypool:  tcp://hk.ezil.me:5555
 
 
