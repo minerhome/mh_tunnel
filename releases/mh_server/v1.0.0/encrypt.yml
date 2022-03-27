@@ -35,8 +35,8 @@ port_to:
   12600 : "ETH 显卡 - 独角兽 ssl"
   12605 : "ETH 显卡 - 独角兽 tcp"
 #
-#  12620 : "ETH 显卡 - ezil池 ssl"
-#  12625 : "ETH 显卡 - ezil池 tcp"
+  12620 : "ETH 显卡 - ezil池 ssl"
+  12625 : "ETH 显卡 - ezil池 tcp"
 
 
 # # ERGO
