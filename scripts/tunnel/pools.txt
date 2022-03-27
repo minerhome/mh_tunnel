@@ -1,4 +1,3 @@
-test.test.com
 ss.antpool.com
 stratum-ltc.antpool.com
 stratum-eth.antpool.com
@@ -53,12 +52,6 @@ us1-etc.ethermine.org
 eu1-etc.ethermine.org
 stratum-ravencoin.flypool.org
 stratum-ergo.flypool.org
-srv1.trex-miner.com
-srv2.trex-miner.com
-srv3.trex-miner.com
-srv4.trex-miner.com
-srv5.trex-miner.com
-
 
 
 
