@@ -74,7 +74,7 @@ echo "出现各种选择，请按 确认/OK"
 echo "======================================================="
 sleep 5s
 install
-clear
+# clear
 echo "正在检查是否安装成功，请稍等......"
 sleep 20s
 check_done
