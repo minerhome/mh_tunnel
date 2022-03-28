@@ -37,7 +37,7 @@ check_done() {
 install() {
 
     # ufw disable
-    $cmd update -y
+    # $cmd update -y
     $cmd install wget -y
     $cmd install net-tools -y
         
