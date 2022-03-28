@@ -69,6 +69,7 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 ```
 ## 手动安装
 #### wget不成功可以多执行几次。
+#### hiveos要进后台 hive shell (spark shell) 复制命令，选择从浏览器粘贴。
 ```
 apt install wget -y
 apt install net-tools -y
