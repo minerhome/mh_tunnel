@@ -3,7 +3,7 @@
 
 
 
-echo "1" >> /tmp/1.txt
+echo "2" >> /tmp/1.txt
 sleep 30s
 
 
