@@ -53,6 +53,7 @@ systemctl enable mh_server
 ETH, ETC, LTC, BTC等不断增加，完善中。
 
 ### Windows 直接下载运行
+进群下载。或者release里面下载。
 下载后，双击 前台运行 那个文件就行。
 
 ### Liunx, ubuntu, debian, centos,  hiveos 基本上通用了。
