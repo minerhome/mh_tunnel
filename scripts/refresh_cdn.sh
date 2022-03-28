@@ -21,4 +21,5 @@
 
 
 
-
+# 用法
+# bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/refresh_cdn.sh)
