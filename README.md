@@ -86,6 +86,8 @@ netstat -antpl | grep 12515
 
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/5.png"></img>
 
+检测方法2，把自己的服务器关掉看矿机会不会掉线。如果掉线说明刚才用的是自己的服务器了。
+恢复使用自己的服务器，先开服务器，等下再开本地隧道软件， 不然它又自动连到公用线路去了。
 
 
 ***
