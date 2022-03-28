@@ -41,10 +41,11 @@ wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/serve
 
 chmod 777 *
 cp mh_server.service  /lib/systemd/system
+systemctl daemon-reload
 systemctl enable mh_server
 systemctl start mh_server
 ```
-
+重启即生效。
 
 
 # 二， 安装加密混淆 - 本地端
