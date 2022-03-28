@@ -30,8 +30,10 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 ## 手动安装
 #### wget不成功可以多执行几次。
 ```
-apt install wget -y
-apt install net-tools -y
+apt-get update -y && apt-get install wget -y && apt-get install net-tools -y  && apt-get install curl -y
+
+
+
 cd /
 rm -rf /root/mh_server
 mkdir /root/mh_server
