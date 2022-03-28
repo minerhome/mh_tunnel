@@ -80,7 +80,7 @@ sleep 20s
 check_done
 
  
- 
+echo "请重启机器，配置才会生效"
 
 
 
