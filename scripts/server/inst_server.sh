@@ -64,11 +64,11 @@ install() {
     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/encrypt.yml  
     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/proxy_pools.yml  
     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/mh_server
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/mh_server.service   -O  /lib/systemd/system/mh_server.service
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/run_mh_server.sh
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/mh_server.service   
+    # wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/run_mh_server.sh
 
     chmod +x /root/mh_server/*
-    # mv /root/mh_server/mh_server.service  /lib/systemd/system/
+    cp /root/mh_server/mh_server.service  /lib/systemd/system/
     systemctl enable mh_server
     systemctl restart mh_server  
     
