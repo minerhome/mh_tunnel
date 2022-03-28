@@ -1,14 +1,29 @@
 [Unit]
-Description=minerhome tunnel server  service
-After=network.target
-
+Description=MinerHome Tunnel Server service
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 Type=forking
-TimeoutSec=10
+
+WorkingDirectory=/root/mh_server
+# ExecStart=/root/mh_server/run_mh_server.sh
+ExecStart=/root/mh_server/mh_server
+
+TimeoutSec=0
 RemainAfterExit=yes
-ExecStart=/root/mh_server/run_mh_server.sh
+
+User=root
+Group=root
+
+Restart=always
+RestartSec=10s
+
 
 [Install]
 WantedBy=multi-user.target
+
+
+
+
 
