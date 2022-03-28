@@ -82,7 +82,7 @@ stratum+ssl://127.0.0.1:12510
 ```
 netstat -antpl | grep 12515
 ```
-在服务器中运行这条命令，检查有没有走自己的服务器， 后面是矿机在用的端口号，如果显示 ESTABLISH 表示正在使用自己的服务器
+在服务器中运行这条命令，检查有没有走自己的服务器， 后面是矿机在用的端口号，如果显示 ESTABLISH 表示正在使用自己的服务器， 如果没有则是服务器没有搭好或者矿机，本地端没弄对。
 
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/5.png"></img>
 
