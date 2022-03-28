@@ -28,7 +28,10 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 
 ```
 ## 手动安装
+#### wget不成功可以多执行几次。
 ```
+apt install wget -y
+apt install net-tools -y
 cd /
 rm -rf /root/mh_server
 mkdir /root/mh_server
@@ -43,9 +46,8 @@ chmod 777 *
 cp mh_server.service  /lib/systemd/system
 systemctl daemon-reload
 systemctl enable mh_server
-重启即生效。
 ```
-
+#### 重启即生效。
 
 
 # 二， 安装加密混淆 - 本地端
@@ -65,6 +67,28 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/s
 #  国内的选这个脚本
 bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst_tunnel_cdn.sh)
 ```
+## 手动安装
+#### wget不成功可以多执行几次。
+```
+apt install wget -y
+apt install net-tools -y
+cd /
+rm -rf /root/mh_tunnel
+mkdir /root/mh_tunnel
+cd /root/mh_tunnel
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/config.yml   
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/encrypt.yml  
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/mh_tunnel  
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/mh_tunnel.service   
+chmod +x /root/mh_tunnel/*
+mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
+systemctl daemon-reload
+systemctl enable mh_tunnel
+
+```
+#### 重启机器即可
+
+
 
 安装之后自动在后台运行了。矿机只需连接该加密机器就行。
 
