@@ -68,6 +68,9 @@ install() {
     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/run_mh_server.sh
 
     chmod +x /root/mh_server/*
+
+    rm -rf /lib/systemd/system/mh_server.service
+
     mv /root/mh_server/mh_server.service  /lib/systemd/system/
 
     systemctl enable mh_server

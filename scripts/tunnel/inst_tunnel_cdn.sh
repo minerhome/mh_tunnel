@@ -41,6 +41,7 @@ install() {
     $cmd install wget -y
     $cmd install net-tools -y
         
+        
     rm -rf /root/mh_tunnel
     mkdir /root/mh_tunnel
     cd /root/mh_tunnel
@@ -53,6 +54,7 @@ install() {
 
  
     chmod +x /root/mh_tunnel/*
+    rm -rf /lib/systemd/system/mh_tunnel.service
     mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
 
     systemctl enable mh_tunnel
