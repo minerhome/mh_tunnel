@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+
+
+    wget   https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/config.yml
+    wget   https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/encrypt.yml
+    wget   https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/mh_tunnel
+    wget   https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service
+    wget   https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/run_mh_tunnel.sh
+
+
+    wget  https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v1.0.0/config.yml   
+    wget  https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v1.0.0/encrypt.yml  
+    wget  https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v1.0.0/proxy_pools.yml 
+    wget  https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v1.0.0/mh_server
+    wget  https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/mh_server.service  
+    wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/run_mh_server.sh
+
+
+
+
+
+
