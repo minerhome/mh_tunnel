@@ -84,6 +84,9 @@ netstat -antpl | grep 12515
 ```
 在服务器中运行这条命令，检查有没有走自己的服务器， 后面是矿机在用的端口号，如果显示 ESTABLISH 表示正在使用自己的服务器
 
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/5.png"></img>
+
+
 
 ***
 #### 联系我们
