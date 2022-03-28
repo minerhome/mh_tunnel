@@ -76,6 +76,15 @@ stratum+ssl://127.0.0.1:12510
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/3.png"></img>
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/4.png"></img>
 
+
+# 五，检查有没有走自己的服务器
+
+```
+netstat -antpl | grep 12515
+```
+检查有没有走自己的服务器， 后面是矿机在用的端口号，如果显示 ESTABLISH 表示正在使用自己的服务器
+
+
 ***
 #### 联系我们
 github:   https://github.com/minerhome/mh_tunnel<br />
