@@ -41,8 +41,8 @@ wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/serve
 
 chmod 777 *
 cp mh_server.service  /lib/systemd/system
-systemctl enable mp_server
-systemctl start mp_server
+systemctl enable mh_server
+systemctl start mh_server
 ```
 
 
