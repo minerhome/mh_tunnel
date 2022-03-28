@@ -23,6 +23,9 @@
 # 可直连github的服务器 - 香港服务器上安装选这个
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/inst_server.sh)
 
+#  国内的选这个脚本
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh)
+
 ```
 
 # 二， 安装加密混淆 - 本地端
