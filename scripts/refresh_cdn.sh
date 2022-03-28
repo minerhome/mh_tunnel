@@ -2,6 +2,15 @@
 
 
 
+https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh
+
+https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst_tunnel_cdn.sh
+
+
+
+
+
+    wget https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/refresh_cdn.sh
 
     wget   https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/config.yml
     wget   https://purge.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/encrypt.yml
