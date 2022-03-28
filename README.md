@@ -27,6 +27,23 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/s
 bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh)
 
 ```
+## 手动安装
+```
+mkdir /root/mh_server
+cd /root/mh_server
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/config.yml   
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/encrypt.yml  
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/proxy_pools.yml  
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/mh_server
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/mh_server.service   
+
+chmod 777 *
+cp mh_server.service  /lib/systemd/system
+systemctl enable mp_server
+systemctl start mp_server
+```
+
+
 
 # 二， 安装加密混淆 - 本地端
 主流币，主流池基本上都可以用。
