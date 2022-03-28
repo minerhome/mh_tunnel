@@ -29,6 +29,7 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 ```
 ## 手动安装
 ```
+rm -rf /root/mh_server
 mkdir /root/mh_server
 cd /root/mh_server
 wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/config.yml   
