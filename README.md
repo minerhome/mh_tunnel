@@ -99,9 +99,15 @@ systemctl enable mh_tunnel
 ```
 #### 重启机器即可
 
-
-
 安装之后自动在后台运行了。矿机只需连接该加密机器就行。
+
+#### 检查一下hiveos安装成功了没
+```
+netstat -anptl | grep 12510
+如果看到有信息，LISTEN 或 ESTABLISHED 就说明成功了。
+```
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/6.png"></img>
+
 
 
 # 三，设置 - 本地端设置
