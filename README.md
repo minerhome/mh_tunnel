@@ -79,10 +79,18 @@ cd /
 rm -rf /root/mh_tunnel
 mkdir /root/mh_tunnel
 cd /root/mh_tunnel
+
 wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/config.yml   
 wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/encrypt.yml  
 wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/mh_tunnel  
 wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/mh_tunnel.service   
+
+# 上面四条下载的命令，如果连不上，可以改成下面四条
+wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/config.yml   
+wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/encrypt.yml
+wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/mh_tunnel  
+wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service  
+
 chmod +x /root/mh_tunnel/*
 mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
 systemctl daemon-reload
