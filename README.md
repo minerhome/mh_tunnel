@@ -18,7 +18,7 @@
 建议选香港服务器， 可选阿里云的香港服务器。通过加密数据过来的，目前都不会查封。
 优选ubuntu20.04版本
 自己不搭建的话，就走矿工之家的公用线路。
-
+#### 记得要进后台打开防火墙啊。把所有的端口都放行。
 ```bash
 # 可直连github的服务器 - 香港服务器上安装选这个
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/inst_server.sh)
