@@ -27,7 +27,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/s
 bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh)
 
 ```
-## 手动安装
+## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
 #### wget不成功可以多执行几次。
 ```
 apt-get update -y && apt-get install wget -y && apt-get install net-tools -y  && apt-get install curl -y
@@ -69,7 +69,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/s
 #  国内的选这个脚本
 bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst_tunnel_cdn.sh)
 ```
-## 手动安装
+## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
 #### wget不成功可以多执行几次。
 #### hiveos要进后台 hive shell (spark shell) 复制命令，选择从浏览器粘贴。
 ```
