@@ -10,7 +10,7 @@ WorkingDirectory=/root/mh_tunnel
 ExecStart=/root/mh_tunnel/run_mh_tunnel.sh
 # ExecStart=/root/mh_tunnel/mh_tunnel
 
-TimeoutSec=30
+TimeoutSec=60
 RemainAfterExit=yes
 
 User=root
