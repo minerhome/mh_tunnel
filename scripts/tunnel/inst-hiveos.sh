@@ -4,6 +4,7 @@
 
 name = "端对端加密隧道 - 加密端（本地端）"
 
+
 cmd="apt-get"
 if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl) ]]; then
     if [[ $(command -v yum) ]]; then
@@ -14,8 +15,20 @@ else
 fi
 
 
+pid=`ps -ef | grep "mh_tunnel" |  awk '{print $2}'`
+if [ -n "$pid" ]
+then
+	echo "kill running mh_tunnel $pid"
+	kill -9 $pid
+fi
+
+
+
 check_done() {
-    if netstat -antpl | grep -q "12510"; then
+
+    pid=`ps -ef | grep "12510" |  awk '{print $2}'`
+    if [ -n "$pid" ]
+    then
         echo -e "\n\n" 
         echo -e "--------------------------------------------------------"
         echo -e "\n" 
@@ -29,7 +42,9 @@ check_done() {
         echo "安装不成功，请重启后重新安装"   
         echo "出现各种选择，请按 确认/OK"
         echo -e "\n\n" 
-    fi      
+    fi    
+
+
 }
 
 
@@ -51,30 +66,17 @@ install() {
     wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/mh_tunnel
     # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service
     # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/run_mh_tunnel.sh
-
  
     chmod +x /root/mh_tunnel/*
-    systemctl stop mh_tunnel
-    systemctl disable mh_tunnel
-    rm -rf /lib/systemd/system/mh_tunnel.service
+    
+    if [[ -f /lib/systemd/system/mh_tunnel.service ]]; then        
+        systemctl stop mh_tunnel
+        systemctl disable mh_tunnel
+        rm -rf /lib/systemd/system/mh_tunnel.service
+    fi
     # mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
     # systemctl enable mh_tunnel
     # systemctl restart mh_tunnel
-
-    rm -rf /etc/rc.local
-    cat >> /etc/rc.local << EOF
-    #!/bin/bash
-    ##!/bin/sh -e
-    cd /root/mh_tunnel
-    nohup /root/mh_tunnel/mh_tunnel &
-    exit 0
-    EOF
-
-    chmod +x /etc/rc.local
-    reboot
-    exit 0
-
-
 }
 
 
@@ -89,16 +91,21 @@ echo "出现各种选择，请按 确认/OK"
 echo "========================================================================"
 sleep 5s
 install
-# clear
-echo "正在检查是否安装成功，请稍等......"
-sleep 20s
+
+rm -rf /etc/rc.local
+cat >> /etc/rc.local << EOF
+#!/bin/bash
+##!/bin/sh -e
+cd /root/mh_tunnel
+nohup /root/mh_tunnel/mh_tunnel &
+exit 0
+EOF
+
+chmod +x /etc/rc.local
+# reboot
+bash /etc/rc.local
+sleep 1s
 check_done
- 
- 
-echo "请重启机器，配置才会生效"
-
-
-
 
 
 

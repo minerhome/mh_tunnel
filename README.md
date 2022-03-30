@@ -64,39 +64,16 @@ ETH, ETC, LTC, BTC等不断增加，完善中。
 ### Liunx, ubuntu, debian, centos,  hiveos 基本上通用了。- 据测试hiveos不稳定
 
 ```bash
-# 可直连github的服务器
-bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/inst_tunnel.sh)
-
 #  国内的选这个脚本
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst_tunnel_cdn.sh)
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst-hiveos.sh)
 ```
 ## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
 #### wget不成功可以多执行几次。
 #### hiveos要进后台 hive shell (spark shell) 复制命令，选择从浏览器粘贴。
 ```
-apt install wget -y
-apt install net-tools -y
-cd /
-rm -rf /root/mh_tunnel
-mkdir /root/mh_tunnel
-cd /root/mh_tunnel
+wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst-hiveos.sh
 
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/config.yml   
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/encrypt.yml  
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/v4.0.0/linux/mh_tunnel  
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/mh_tunnel.service   
-
-# 上面四条下载的命令，如果连不上，可以改成下面四条
-wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/config.yml   
-wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/encrypt.yml
-wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/mh_tunnel  
-wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service  
-
-chmod +x /root/mh_tunnel/*
-mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
-systemctl daemon-reload
-systemctl enable mh_tunnel
-
+bash inst-hiveos.sh
 ```
 #### 重启机器即可
 
