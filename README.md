@@ -130,7 +130,7 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 
 
 # 四，开始双向加密挖矿，不惧查水表。 （这一步是必须的）
-
+#### hiveos特别强调，算力狗要设置，算力低于30M就重启。
 如果是hiveos则可以每一台都安装一下。然后飞行表就写本机地址
 如E池可以写
 stratum+ssl://127.0.0.1:12510
