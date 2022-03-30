@@ -1,5 +1,5 @@
 [Unit]
-Description=minerhome tunnel service
+Description=MinerHome Tunnel Service
 After=network-online.target
 Wants=network-online.target
 
@@ -10,7 +10,7 @@ WorkingDirectory=/root/mh_tunnel
 # ExecStart=/root/mh_tunnel/run_mh_tunnel.sh
 ExecStart=/root/mh_tunnel/mh_tunnel
 
-TimeoutSec=0
+TimeoutSec=30
 RemainAfterExit=yes
 
 User=root
