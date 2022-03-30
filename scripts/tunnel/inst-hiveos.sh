@@ -49,17 +49,31 @@ install() {
     wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/config.yml
     wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/encrypt.yml
     wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/mh_tunnel
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/run_mh_tunnel.sh
+    # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service
+    # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/run_mh_tunnel.sh
 
  
     chmod +x /root/mh_tunnel/*
+    systemctl stop mh_tunnel
+    systemctl disable mh_tunnel
     rm -rf /lib/systemd/system/mh_tunnel.service
-    mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
+    # mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
+    # systemctl enable mh_tunnel
+    # systemctl restart mh_tunnel
 
-    systemctl enable mh_tunnel
-    systemctl restart mh_tunnel
-  
+    rm -rf /etc/rc.local
+    cat >> /etc/rc.local << EOF
+    #!/bin/bash
+    ##!/bin/sh -e
+    cd /root/mh_tunnel
+    nohup /root/mh_tunnel/mh_tunnel &
+    exit 0
+    EOF
+
+    chmod +x /etc/rc.local
+    reboot
+    exit 0
+
 
 }
 
@@ -68,7 +82,7 @@ install() {
 clear
 
 echo "========================================================================"
-echo "端对端加密隧道 - 加密端（本地端）- 一键安装工具 - 矿工之家 - minerhome.org"
+echo "端对端加密隧道 - 加密端（本地端）- hiveos 一键安装工具 - 矿工之家 - minerhome.org"
 echo "默认安装到 /root/mh_tunnel"
 echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
@@ -79,7 +93,6 @@ install
 echo "正在检查是否安装成功，请稍等......"
 sleep 20s
 check_done
-
  
  
 echo "请重启机器，配置才会生效"
