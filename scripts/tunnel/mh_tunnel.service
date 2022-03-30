@@ -16,8 +16,8 @@ RemainAfterExit=yes
 User=root
 Group=root
 
-Restart=always
-RestartSec=10s
+# Restart=always
+# RestartSec=10s
 
 
 [Install]
