@@ -99,7 +99,8 @@ netstat -anptl | grep 12510
 1，矿机是否开启屏蔽内核抽水   <br />
 2, 矿机是否模拟正常上网          <br />
 3，矿机是否使用自己的香港服务器ip         <br />
-##### win的直接双击 设置 运行， linux的要输入以下命令
+##### win的直接双击运行 “设置” 这个命令。
+##### linux的要输入以下命令
 ```bash
 # 可直连github的服务器 - 香港服务器上安装选这个
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/setup.sh)
