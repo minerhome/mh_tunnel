@@ -129,7 +129,11 @@ stratum+ssl://127.0.0.1:12510
 ```
 netstat -antpl | grep 12515
 ```
-在服务器中运行这条命令，检查有没有走自己的服务器， 后面是矿机在用的端口号，如果显示 ESTABLISH 表示正在使用自己的服务器， 如果没有则是服务器没有搭好或者矿机，本地端没弄对。
+在服务器中运行这条命令，看提示。如果没有任何反应，说明服务端没有安装成功。
+如果有显示 LISTEN      说明安装成功了
+如果有显示 ESTABLISH   说明矿机已经连上了
+
+测试的时候，先用E池来测试，成功了再换其它池。有的池子没有开通。
 
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/5.png"></img>
 
