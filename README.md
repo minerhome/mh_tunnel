@@ -20,25 +20,41 @@
 #### 2022-4-5  增加了ergo, ton  
 
 
-# 一，搭建自己的解密服务器 - 服务端 - （这一步是可选的）
+# 一，搭建自己的解密服务器 - 服务端 - （这一步是可选的，使用自己的服务器才要做这一步）
 建议选香港服务器， 可选阿里云的香港服务器。通过加密数据过来的，目前都不会查封。
 优选ubuntu20.04版本
 自己不搭建的话，就走矿工之家的公用线路。
 #### 记得要进后台打开防火墙啊。把所有的端口都放行。
 
-&nbsp; 可直连github的服务器 - 香港服务器上安装选这个，只需两条命令
-```
-apt install wget
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/inst_server.sh  -O  inst_server.sh
-bash inst_server.sh
-```
-&nbsp; 如果上面无法连接，就用这个脚本
+&nbsp; 香港服务器上安装选这个，只需 3 条命令
 ```
 apt install wget
 wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh  -O  inst_server_cdn.sh
 bash inst_server_cdn.sh
 ```
-#### 重启即生效。
+
+&nbsp; 如果上面无法安装就手动安装，一行一行复制进去，回车执行。最后重启。
+```
+    ufw disable
+    apt update -y
+    apt install wget -y
+    apt install net-tools -y
+
+    rm -rf /root/mh_server
+    mkdir /root/mh_server
+    cd /root/mh_server
+
+    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/config.yml   
+    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/encrypt.yml  
+    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/proxy_pools.yml 
+    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/mh_server
+    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/mh_server.service  
+
+    chmod +x /root/mh_server/*
+    cp /root/mh_server/mh_server.service  /lib/systemd/system/
+    systemctl enable mh_server
+```
+#### 然后重启服务器
 
 
 # 二， 安装加密混淆 - 本地端 - （这一步是必须的）
@@ -77,7 +93,7 @@ netstat -anptl | grep 12510
 
 
 
-# 三，设置 - 本地端设置 - （这一步是可选的）
+# 三，设置 - 本地端设置 - （这一步是可选的， 只有在第一步搭建自己的服务器或者找群主拿专用地址才需要这一步。）
 ### 本地加密走自己的解密服务器
 #### 30g算力以上也可以找我领取低抽线路
 没有设置则默认走矿工之家的默认公用服务器。如果你通过上一步已经自己搭建了一个加密服务器，则可以在这里设置。使本地的加密隧道走你自己的服务器。
