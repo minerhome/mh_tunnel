@@ -26,11 +26,9 @@
 自己不搭建的话，就走矿工之家的公用线路。
 #### 记得要进后台打开防火墙啊。把所有的端口都放行。
 
-&nbsp; 香港服务器上安装选这个，只需 3 条命令
+&nbsp; 香港服务器上执行一键安装脚本
 ```
-apt install wget
-wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh  -O  inst_server_cdn.sh
-bash inst_server_cdn.sh
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh)
 ```
 
 &nbsp; 如果上面无法安装就手动安装，一行一行复制进去，回车执行。最后重启。
@@ -54,7 +52,7 @@ bash inst_server_cdn.sh
     cp /root/mh_server/mh_server.service  /lib/systemd/system/
     systemctl enable mh_server
 ```
-#### 然后重启服务器
+#### 然后重启服务器 - 可到后面第5步去检查安装成功了没有。
 
 
 # 二， 安装加密混淆 - 本地端 - （这一步是必须的）
