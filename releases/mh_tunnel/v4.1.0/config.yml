@@ -1,0 +1,7 @@
+
+log: 0
+log_file: log.log
+mess: 0
+nodevfee: 1
+strict_server: 0
+tunnel_to:
