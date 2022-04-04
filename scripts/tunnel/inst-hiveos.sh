@@ -61,9 +61,9 @@ install() {
     mkdir /root/mh_tunnel
     cd /root/mh_tunnel
 
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/config.yml
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/encrypt.yml
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/v4.0.0/linux/mh_tunnel
+    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/config.yml
+    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/encrypt.yml
+    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/mh_tunnel
     # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service
     # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/run_mh_tunnel.sh
  
