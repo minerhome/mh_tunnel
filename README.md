@@ -1,5 +1,7 @@
 # mh_tunnel 端对端加密隧道流量混淆
 
+目前已支持 ETH, ETC, LTC, BTC, ERGO, TON， 显卡机， 专业机都支持。
+
 ## 更新日志   （可加qq群交流:  171763813）
 #### 2022-3-20  30g算力以上可以进群找群主领取低抽线路
 #### 2022-3-19  默认为屏蔽内核抽水，也可以恢复内核抽水， 修改 nodevfee: 1 这个参数。为了安全起见，不要改动它。
@@ -14,7 +16,8 @@
 #### 2022-3-31  本地端可以限制只走专用的IP， 要不要自动切换到矿工之家公用线路由自己决定。
 #### 2022-3-31  修改hiveos安装方法，现在hiveos可以正常使用了。
 接下来就是增加服务端的稳定性。
-
+#### 2022-4-5  增加了服务端的稳定性
+#### 2022-4-5  增加了ergo, ton  
 
 
 # 一，搭建自己的解密服务器 - 服务端 - （这一步是可选的）
@@ -22,35 +25,16 @@
 优选ubuntu20.04版本
 自己不搭建的话，就走矿工之家的公用线路。
 #### 记得要进后台打开防火墙啊。把所有的端口都放行。
-```bash
-# 可直连github的服务器 - 香港服务器上安装选这个
-bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/inst_server.sh)
 
-#  国内的选这个脚本
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh)
-
+#### 可直连github的服务器 - 香港服务器上安装选这个
 ```
-## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
-#### wget不成功可以多执行几次。
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/inst_server.sh  -O  inst_server.sh
+bash inst_server.sh
 ```
-apt-get update -y && apt-get install wget -y && apt-get install net-tools -y  && apt-get install curl -y
-
-
-
-cd /
-rm -rf /root/mh_server
-mkdir /root/mh_server
-cd /root/mh_server
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/config.yml   
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/encrypt.yml  
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/proxy_pools.yml  
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/releases/mh_server/v1.0.0/mh_server
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/mh_server.service   
-
-chmod 777 *
-cp mh_server.service  /lib/systemd/system
-systemctl daemon-reload
-systemctl enable mh_server
+####  如果上面无法连接，就用这个脚本
+```
+wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh  -O  inst_server_cdn.sh
+bash inst_server_cdn.sh
 ```
 #### 重启即生效。
 
@@ -58,7 +42,7 @@ systemctl enable mh_server
 # 二， 安装加密混淆 - 本地端 - （这一步是必须的）
 ######  可以每台都安装，也可以在局域网中同一个交换机出来的只安装一台，然后其它矿机来连接它。
 主流币，主流池基本上都可以用。
-ETH, ETC, LTC, BTC等不断增加，完善中。
+ETH, ETC, LTC, BTC, ERGO, TON等不断增加，完善中。
 
 ### Windows 直接下载运行 - 建议使用windows版本
 进群下载。或者release里面下载。
