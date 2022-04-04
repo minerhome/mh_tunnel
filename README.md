@@ -26,12 +26,12 @@
 自己不搭建的话，就走矿工之家的公用线路。
 #### 记得要进后台打开防火墙啊。把所有的端口都放行。
 
-#### 可直连github的服务器 - 香港服务器上安装选这个
+###### 可直连github的服务器 - 香港服务器上安装选这个，只需两条命令
 ```
 wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/inst_server.sh  -O  inst_server.sh
 bash inst_server.sh
 ```
-####  如果上面无法连接，就用这个脚本
+######  如果上面无法连接，就用这个脚本
 ```
 wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh  -O  inst_server_cdn.sh
 bash inst_server_cdn.sh
