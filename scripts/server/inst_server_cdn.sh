@@ -64,7 +64,9 @@ install() {
     wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/encrypt.yml  
     wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/proxy_pools.yml 
     wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/mh_server
+    
     wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/mh_server.service  
+
     # wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/run_mh_server.sh
 
     chmod +x /root/mh_server/*

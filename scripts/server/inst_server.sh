@@ -75,6 +75,7 @@ install() {
     fi
 
     cp /root/mh_server/mh_server.service  /lib/systemd/system/
+    systemctl daemon-reload
     systemctl enable mh_server
     systemctl restart mh_server    
     
