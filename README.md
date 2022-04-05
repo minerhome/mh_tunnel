@@ -29,11 +29,6 @@
 &nbsp; 1, 香港服务器上执行一键安装脚本
 ```
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh)
-
-如果上面的一键安装不成功，就分两步来执行
-wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh  -O  inst_server.sh
-bash inst_server.sh
-
 ```
 
 &nbsp; 2，如果上面无法安装就手动安装，一行一行复制进去，回车执行。最后重启。
