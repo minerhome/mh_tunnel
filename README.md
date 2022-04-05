@@ -26,9 +26,9 @@
 自己不搭建的话，就走矿工之家的公用线路。
 #### 记得要进后台打开防火墙啊。把所有的端口都放行。
 
-&nbsp; 香港服务器上执行一键安装脚本
+&nbsp; 1, 香港服务器上执行一键安装脚本
 ```
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server_cdn.sh)
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/inst_server.sh)
 ```
 
 &nbsp; 如果上面无法安装就手动安装，一行一行复制进去，回车执行。最后重启。
@@ -42,11 +42,12 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
     mkdir /root/mh_server
     cd /root/mh_server
 
-    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/config.yml   
-    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/encrypt.yml  
-    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/proxy_pools.yml 
-    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_server/v4.1.0/mh_server
-    wget  https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/server/mh_server.service  
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/config.yml  -O  config.yml
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/encrypt.yml  -O  encrypt.yml
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/proxy_pools.yml  -O  proxy_pools.yml
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/mh_server.service  -O  mh_server.service
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/mh_server  -O  mh_server
+
 
     chmod +x /root/mh_server/*
     cp /root/mh_server/mh_server.service  /lib/systemd/system/
