@@ -45,9 +45,9 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scr
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/config.yml  -O  config.yml
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/encrypt.yml  -O  encrypt.yml
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/proxy_pools.yml  -O  proxy_pools.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/mh_server.service  -O  mh_server.service
     wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/mh_server  -O  mh_server
-
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/mh_server.service  -O  mh_server.service
+               
     chmod +x /root/mh_server/*
     cp /root/mh_server/mh_server.service  /lib/systemd/system/
     systemctl daemon-reload
