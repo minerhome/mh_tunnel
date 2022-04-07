@@ -54,6 +54,8 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scr
     systemctl enable mh_server
     systemctl restart mh_server
 
+    如果v4.1.0不太稳定，则可以安装老版本，把版本号改为v1.0.0，其它步骤不变。
+
 ```
 #### 然后重启服务器 - 可到后面第5步去检查安装成功了没有。
 
