@@ -73,9 +73,11 @@ check_limit(){
 }
 
 uninstall() {
-        systemctl stop mh_server
+        echo "正在卸载......"
+        # systemctl stop mh_server
         systemctl disable mh_server
         rm -rf /root/mh_server
+        echo "卸载成功......"
 }
 
 
@@ -142,7 +144,7 @@ echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
 echo "  1、安装(默认安装到/root/mh_server)"
 echo "  2、卸载"
-echo "  3、更新 - 未实现"
+echo "  3、更新"
 echo "  4、启动"
 echo "  5、重启"
 echo "  6、停止"
