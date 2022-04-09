@@ -78,6 +78,7 @@ uninstall() {
         systemctl disable mh_server
         rm -rf /root/mh_server
         echo "卸载成功......"
+        echo "卸载完记得重启服务器"
 }
 
 
