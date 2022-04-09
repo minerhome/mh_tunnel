@@ -74,7 +74,7 @@ check_limit(){
 
 uninstall() {
         echo "正在卸载......"
-        # systemctl stop mh_server
+        systemctl stop mh_server  &
         systemctl disable mh_server  >> /dev/null
         rm -rf /root/mh_server
         echo "卸载成功......"
