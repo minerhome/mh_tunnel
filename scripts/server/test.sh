@@ -2,7 +2,7 @@
 
 [[ $(id -u) != 0 ]] && echo -e "请使用root权限运行安装脚本， 通过sudo su root切换再来运行" && exit 1
 
-name = "端对端加密隧道 - 解密端（服务端）"
+# name = "端对端加密隧道 - 解密端（服务端）"
 
 cmd="apt-get"
 if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl) ]]; then
@@ -133,6 +133,7 @@ install() {
 
 
   
+clear
 
 echo "======================================================="
 echo "端对端加密隧道 - 解密端（服务端）- 一键安装工具 - 矿工之家 - minerhome.org"
