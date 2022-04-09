@@ -14,6 +14,25 @@ else
 fi
 
 
+start() {
+    if netstat -anptl | grep -q "mh_server"; then
+        echo -e "mh_server 已启动,请勿重复启动" && exit 1
+    fi
+    systemctl start mh_server 
+    echo "mh_server 已启动"
+}
+
+restart() {
+    systemctl restart mh_server 
+    echo "mh_server 重新启动成功" 
+}
+
+stop() {
+    systemctl stop mh_server 
+    echo "mh_server 停止成功" 
+}
+
+
 check_done() {
     if netstat -antpl | grep -q "12510"; then
         echo -e "\n\n" 
@@ -48,6 +67,10 @@ change_limit(){
     fi
 }
 
+check_limit(){
+    echo -n "当前连接数限制："
+    ulimit -n
+}
 
 uninstall() {
         systemctl stop mh_server
@@ -108,40 +131,6 @@ install() {
 
 }
 
-
-
-
-install() {
-
-    ufw disable
-    $cmd update -y
-    $cmd install wget -y
-    $cmd install net-tools -y
-
-    rm -rf /root/mh_server
-    mkdir /root/mh_server
-    cd /root/mh_server
-
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/config.yml  -O  config.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/encrypt.yml  -O  encrypt.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/proxy_pools.yml  -O  proxy_pools.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/mh_server  -O  mh_server
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/mh_server.service  -O  /lib/systemd/system/mh_server.service
-                         
-    chmod +x /root/mh_server/*
-    systemctl daemon-reload
-    systemctl enable mh_server
-    systemctl restart mh_server  &    
-}
-
-
-
-clear
-echo "======================================================="
-
-echo "======================================================="
-change_limit
-install
 
   
 
