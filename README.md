@@ -42,19 +42,17 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scr
     mkdir /root/mh_server
     cd /root/mh_server
 
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/config.yml  -O  config.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/encrypt.yml  -O  encrypt.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/proxy_pools.yml  -O  proxy_pools.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.1.0/mh_server  -O  mh_server
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v1.0.0/config.yml  -O  config.yml
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v1.0.0/encrypt.yml  -O  encrypt.yml
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v1.0.0/proxy_pools.yml  -O  proxy_pools.yml
+    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v1.0.0/mh_server  -O  mh_server
     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/mh_server.service  -O  mh_server.service
                
     chmod +x /root/mh_server/*
     cp /root/mh_server/mh_server.service  /lib/systemd/system/
     systemctl daemon-reload
     systemctl enable mh_server
-    systemctl restart mh_server
-
-    如果v4.1.0不太稳定，则可以安装老版本，把版本号改为v1.0.0，其它步骤不变。
+    systemctl restart mh_server 
 
 ```
 #### 然后重启服务器 - 可到后面第5步去检查安装成功了没有。
