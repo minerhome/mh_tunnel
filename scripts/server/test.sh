@@ -95,6 +95,14 @@ install() {
     cd /root/mh_server
 
     clear
+    echo -e "\n" 
+    echo -e "\n" 
+    echo -e "\n" 
+    echo -e "\n" 
+    echo -e "\n" 
+    echo -e "\n" 
+    echo -e "\n" 
+    echo -e "\n" 
     echo "请选择要安装的版本"
     echo "  1、v1.0.0"
     echo "  2、v4.1.0"
@@ -138,7 +146,14 @@ install() {
 
   
 clear
-
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
 echo "======================================================="
 echo "端对端加密隧道 - 解密端（服务端）- 一键安装工具 - 矿工之家 - minerhome.org"
 echo "如果安装不成功，则重启服务器后重新安装"
