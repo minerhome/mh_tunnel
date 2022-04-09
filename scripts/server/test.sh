@@ -126,7 +126,7 @@ install() {
     systemctl daemon-reload
     systemctl enable mh_server
     systemctl restart mh_server  &    
-    echo "正在检查是否安装成功，请耐心等待1分钟稍......"
+    echo "正在检查是否安装成功，请耐心等待1分钟......"
     sleep 30s
     check_done
 
