@@ -91,7 +91,8 @@ install() {
     mkdir /root/mh_server
     cd /root/mh_server
 
-    echo "请选择安装的版本"
+    clear
+    echo "请选择要安装的版本"
     echo "  1、v1.0.0"
     echo "  2、v4.1.0"
     echo "  3、v4.2.0"
@@ -149,7 +150,7 @@ echo "  7、解除linux系统连接数限制(需要重启服务器生效)"
 echo "  8、查看当前系统连接数限制"
 echo "  9、重启服务器"
 echo "======================================================="
-read -p "$(echo -e "请选择[1-8]：")" choose
+read -p "$(echo -e "请选择[1-9]：")" choose
 case $choose in
 1)
     install
