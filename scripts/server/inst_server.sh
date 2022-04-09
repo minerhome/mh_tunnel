@@ -75,7 +75,7 @@ check_limit(){
 uninstall() {
         echo "正在卸载......"
         # systemctl stop mh_server
-        systemctl disable mh_server
+        systemctl disable mh_server  >> /dev/null
         rm -rf /root/mh_server
         echo "卸载成功......"
         echo "卸载完记得重启服务器"
@@ -135,7 +135,7 @@ install() {
     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/mh_server.service  -O  /lib/systemd/system/mh_server.service        
     chmod +x /root/mh_server/*
     systemctl daemon-reload
-    systemctl enable mh_server
+    systemctl enable mh_server  >> /dev/null
     systemctl restart mh_server  &    
 
     clear
