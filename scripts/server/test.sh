@@ -177,7 +177,7 @@ case $choose in
     uninstall
     ;;
 3)
-    update
+    install
     ;;
 4)
     start
