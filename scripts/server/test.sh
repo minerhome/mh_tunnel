@@ -141,12 +141,13 @@ echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
 echo "  1、安装(默认安装到/root/mh_server)"
 echo "  2、卸载"
-echo "  3、更新"
+echo "  3、更新 - 未实现"
 echo "  4、启动"
 echo "  5、重启"
 echo "  6、停止"
 echo "  7、解除linux系统连接数限制(需要重启服务器生效)"
 echo "  8、查看当前系统连接数限制"
+echo "  9、重启服务器"
 echo "======================================================="
 read -p "$(echo -e "请选择[1-8]：")" choose
 case $choose in
@@ -173,6 +174,9 @@ case $choose in
     ;;
 8)
     check_limit
+    ;;
+9)
+    reboot
     ;;
 *)
     echo "输入错误请重新输入！"
