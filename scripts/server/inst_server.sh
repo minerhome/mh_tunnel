@@ -169,13 +169,9 @@ echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
 echo "  1、安装(默认安装到/root/mh_server) - 安装完记得重启服务器"
 echo "  2、卸载 - 卸载完记得重启服务器"
-echo "  3、更新"
-echo "  4、启动"
-echo "  5、重启加密隧道"
-echo "  6、停止"
-echo "  7、解除linux系统连接数限制(需要重启服务器生效)"
-echo "  8、查看当前系统连接数限制"
-echo "  9、重启服务器"
+echo "  3、解除linux系统连接数限制 - 需要重启服务器生效"
+echo "  4、查看当前系统连接数限制"
+echo "  5、重启服务器"
 echo "================================================================================"
 read -p "$(echo -e "请选择[1-9]：")" choose
 case $choose in
@@ -186,24 +182,12 @@ case $choose in
     uninstall
     ;;
 3)
-    install
-    ;;
-4)
-    start
-    ;;
-5)
-    restart
-    ;;
-6)
-    stop
-    ;;
-7)
     change_limit
     ;;
-8)
+4)
     check_limit
     ;;
-9)
+5)
     reboot
     ;;
 *)
