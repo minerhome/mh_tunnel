@@ -23,11 +23,17 @@ start() {
 }
 
 restart() {
+    if netstat -anptl | ! grep -q "mh_server"; then
+        echo -e "mh_server 没有安装" && exit 1
+    fi
     systemctl restart mh_server 
     echo "mh_server 重新启动成功" 
 }
 
 stop() {
+    if ! netstat -anptl |  grep -q "mh_server"; then
+        echo -e "mh_server 没有安装" && exit 1
+    fi
     systemctl stop mh_server 
     echo "mh_server 停止成功" 
 }
