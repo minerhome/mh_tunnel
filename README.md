@@ -26,35 +26,11 @@
 自己不搭建的话，就走矿工之家的公用线路。
 #### 记得要进后台打开防火墙啊。把所有的端口都放行。
 
-&nbsp; 1, 香港服务器上执行一键安装脚本
+&nbsp; 香港服务器上执行一键安装脚本
 ```
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh)
 ```
 
-&nbsp; 2，如果上面无法安装就手动安装，一行一行复制进去，回车执行。最后重启。
-```
-    ufw disable
-    apt update -y
-    apt install wget -y
-    apt install net-tools -y
-  
-    systemctl stop mh_server  &
-    rm -rf /root/mh_server
-    mkdir /root/mh_server
-    cd /root/mh_server
-
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.2.0/config.yml  -O  /root/mh_server/config.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.2.0/encrypt.yml  -O  /root/mh_server/encrypt.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.2.0/proxy_pools.yml  -O  /root/mh_server/proxy_pools.yml
-    wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.2.0/mh_server  -O  /root/mh_server/mh_server
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/mh_server.service  -O  /lib/systemd/system/mh_server.service        
-
-    chmod +x /root/mh_server/*
-    systemctl daemon-reload
-    systemctl enable mh_server
-    systemctl restart mh_server  &
-
-```
 #### 然后重启服务器 - 可到后面第5步去检查安装成功了没有。
 
 
