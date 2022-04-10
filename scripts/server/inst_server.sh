@@ -19,17 +19,17 @@ start() {
         echo -e "mh_server 已启动,请勿重复启动" && exit 1
     fi
     systemctl start mh_server 
-    echo "mh_server 已启动"
+    echo "mh_server 启动"
 }
 
 restart() {
     systemctl restart mh_server >> /dev/null
-    echo "mh_server 重新启动成功" 
+    echo "mh_server 重新启动" 
 }
 
 stop() {
     systemctl stop mh_server >> /dev/null
-    echo "mh_server 停止成功" 
+    echo "mh_server 停止" 
 }
 
 
