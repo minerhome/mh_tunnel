@@ -105,11 +105,11 @@ install () {
         $cmd install wget -y
         $cmd install net-tools -y
             
-        rm -rf /etc/rc.local
+        rm -rf  /etc/rc.local
         rm -rf  /lib/systemd/system/mh_tunnel.service
-        rm -rf /root/mh_tunnel
-        mkdir /root/mh_tunnel
-        cd /root/mh_tunnel
+        rm -rf  /root/mh_tunnel
+        mkdir   /root/mh_tunnel
+        cd      /root/mh_tunnel
 
         wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/config.yml
         wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/encrypt.yml
