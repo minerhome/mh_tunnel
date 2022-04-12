@@ -17,7 +17,7 @@ User=root
 Group=root
 
 Restart=always
-RestartSec=10s
+RestartSec=60s
 
 
 [Install]

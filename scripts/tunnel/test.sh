@@ -58,7 +58,7 @@ setup() {
 
 
 
-install () {
+install_2 () {
 
         $cmd install wget -y
         $cmd install net-tools -y
@@ -98,6 +98,51 @@ install () {
 
 }
 
+
+
+install () {
+
+        $cmd install wget -y
+        $cmd install net-tools -y
+            
+        rm -rf /etc/rc.local
+        rm -rf  /lib/systemd/system/mh_tunnel.service
+        rm -rf /root/mh_tunnel
+        mkdir /root/mh_tunnel
+        cd /root/mh_tunnel
+
+        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/config.yml
+        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/encrypt.yml
+        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/mh_tunnel
+        # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/rc.local -O /etc/rc.local
+        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service  -O  /lib/systemd/system/mh_tunnel.service
+        # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/run_mh_tunnel.sh
+
+        chmod +x /root/mh_tunnel/*
+
+
+        # rm -rf /etc/rc.local
+        # cat >> /etc/rc.local << EOF
+        # #!/bin/bash
+        # ##!/bin/sh -e
+        # cd /root/mh_tunnel
+        # nohup /root/mh_tunnel/mh_tunnel &
+        # exit 0
+        # EOF
+
+        # chmod +x /etc/rc.local
+        # reboot
+        # bash /etc/rc.local
+
+        echo "正在启动加密隧道......"       
+        systemctl daemon-reload    
+        systemctl enable mh_tunnel 
+        systemctl restart mh_tunnel &
+        sleep 10s
+        check_done
+
+
+}
 
 uninstall() {
         echo "卸载加密隧道......"
