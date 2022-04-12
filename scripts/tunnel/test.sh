@@ -136,13 +136,13 @@ install () {
 
         echo "正在启动加密隧道......"       
         systemctl daemon-reload    
-        systemctl enable mh_tunnel   &
+        systemctl enable mh_tunnel    >> /dev/null
         systemctl restart mh_tunnel  &
         sleep 10s
         check_done
 
-
 }
+
 
 uninstall() {
         echo "卸载加密隧道......"
