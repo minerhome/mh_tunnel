@@ -131,7 +131,9 @@ install() {
         ;;
     esac
                 
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/run_mh_server.sh  -O  /root/mh_server/run_mh_server.sh
     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/mh_server.service  -O  /lib/systemd/system/mh_server.service        
+    
     chmod +x /root/mh_server/*
     systemctl daemon-reload
     systemctl enable mh_server  >> /dev/null
