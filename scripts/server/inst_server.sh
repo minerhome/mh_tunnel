@@ -155,9 +155,10 @@ install() {
 }
 
 setup() {
+
     if [[ ! -d /root/mh_server ]]; then
         echo
-        echo -e "没有安装，请先安装再来设置"
+        echo -e "请先安装再来设置"
         exit 1
     fi
 
