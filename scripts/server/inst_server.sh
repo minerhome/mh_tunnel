@@ -154,6 +154,15 @@ install() {
 
 }
 
+setup() {
+
+    cd /root/mh_server
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/server_setup   -O /root/mh_server/server_setup
+    chmod +x /root/mh_server/*
+    ./server_setup
+}
+
+
 
   
 clear
@@ -170,26 +179,30 @@ echo "端对端加密隧道 - 解密端（服务端）- 一键安装工具 - 矿
 echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
 echo "  1、安装(默认安装到/root/mh_server) - 安装完记得重启服务器 - 软件开机会自动启动，后台守护运行"
-echo "  2、卸载 - 卸载完记得重启服务器"
-echo "  3、解除linux系统连接数限制 - 需要重启服务器生效"
-echo "  4、查看当前系统连接数限制"
-echo "  5、重启服务器"
+echo "  2、设置 - 开启各种币种，服务器重启频率"
+echo "  3、卸载 - 卸载完记得重启服务器"
+echo "  4、解除linux系统连接数限制 - 需要重启服务器生效"
+echo "  5、查看当前系统连接数限制"
+echo "  6、重启服务器"
 echo "================================================================================"
-read -p "$(echo -e "请选择[1-5]：")" choose
+read -p "$(echo -e "请选择[1-6]：")" choose
 case $choose in
 1)
     install
     ;;
 2)
-    uninstall
+    setup
     ;;
 3)
-    change_limit
+    uninstall
     ;;
 4)
-    check_limit
+    change_limit
     ;;
 5)
+    check_limit
+    ;;
+6)
     reboot
     ;;
 *)
