@@ -155,6 +155,11 @@ install() {
 }
 
 setup() {
+    if [[ ! -d /root/mh_server ]]; then
+        echo
+        echo -e "没有安装，请先安装再来设置"
+        exit 1
+    fi
 
     cd /root/mh_server
     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/server_setup   -O /root/mh_server/server_setup
