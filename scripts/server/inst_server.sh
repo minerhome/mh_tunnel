@@ -162,7 +162,7 @@ setup() {
     echo -e "\n" 
     echo -e "\n" 
     echo -e "\n" 
-    
+
     if [[ ! -d /root/mh_server ]]; then
         echo
         echo -e "请先安装再来设置"
@@ -172,6 +172,7 @@ setup() {
     cd /root/mh_server
     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/server/server_setup   -O /root/mh_server/server_setup
     chmod +x /root/mh_server/*
+    clear
     ./server_setup
 }
 
