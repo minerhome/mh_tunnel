@@ -45,9 +45,8 @@ ETH, ETC, LTC, BTC, ERGO, TON等不断增加，完善中。
 下载后，双击 前台运行 那个文件就行。
 
 ### Liunx, ubuntu, debian, centos,  hiveos 基本上通用了。- 包括安装，设置，删除
-
-```bash
 #  国内的选这个脚本
+```bash
 bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst-hiveos.sh)
 ```
 ## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
