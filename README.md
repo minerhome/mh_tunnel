@@ -27,7 +27,7 @@
 自己不搭建的话，就走矿工之家的公用线路。
 #### 记得要进后台打开防火墙啊。把所有的端口都放行。
 
-&nbsp; 香港服务器上执行一键安装脚本 - 包括安装，设置，删除
+&nbsp; 香港服务器上执行一键安装脚本 - 包括安装，设置，删除，建议安装完成之后设置一下，只打开自己有用到的币种。
 ```
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh)
 ```
