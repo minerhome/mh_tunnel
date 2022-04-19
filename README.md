@@ -92,10 +92,10 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 # 四，开始双向加密挖矿，不惧查水表。 （这一步是必须的）
 
 如果是hiveos则可以每一台都安装一下。然后飞行表就写本机地址
-如E池可以写
-127.0.0.1:12510   上面勾上SSL Urls
-127.0.0.1:12515   不必勾上SSL
-各个挖矿软件的设置，可能是不一样的。参考各自说明。
+###### 如E池可以写
+###### 127.0.0.1:12510   上面勾上SSL Urls
+###### 127.0.0.1:12515   不必勾上SSL
+###### 各个挖矿软件的设置，可能是不一样的。参考各自说明。
 
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/1.png"></img>
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/7.png"></img>
