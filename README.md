@@ -27,7 +27,7 @@
 自己不搭建的话，就走矿工之家的公用线路。
 #### 记得要进后台打开防火墙啊。把所有的端口都放行。
 
-&nbsp; 香港服务器上执行一键安装脚本
+&nbsp; 香港服务器上执行一键安装脚本 - 包括安装，设置，删除
 ```
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh)
 ```
@@ -44,7 +44,7 @@ ETH, ETC, LTC, BTC, ERGO, TON等不断增加，完善中。
 进群下载。或者release里面下载。
 下载后，双击 前台运行 那个文件就行。
 
-### Liunx, ubuntu, debian, centos,  hiveos 基本上通用了。- 据测试hiveos不稳定
+### Liunx, ubuntu, debian, centos,  hiveos 基本上通用了。- 包括安装，设置，删除
 
 ```bash
 #  国内的选这个脚本
