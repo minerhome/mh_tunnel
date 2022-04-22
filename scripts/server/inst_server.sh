@@ -106,7 +106,8 @@ install() {
     echo "  1、v1.0.0"
     echo "  2、v4.1.0"
     echo "  3、v4.2.0"
-    read -p "$(echo -e "请输入[1-3]：")" choose
+    echo "  4、v4.3.0"
+    read -p "$(echo -e "请输入[1-4]：")" choose
     case $choose in
     1)
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v1.0.0/config.yml  -O  /root/mh_server/config.yml
@@ -125,6 +126,12 @@ install() {
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.2.0/encrypt.yml  -O  /root/mh_server/encrypt.yml
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.2.0/proxy_pools.yml  -O  /root/mh_server/proxy_pools.yml
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.2.0/mh_server  -O  /root/mh_server/mh_server
+        ;;
+    4)
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.3.0/config.yml  -O  /root/mh_server/config.yml
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.3.0/encrypt.yml  -O  /root/mh_server/encrypt.yml
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.3.0/proxy_pools.yml  -O  /root/mh_server/proxy_pools.yml
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.3.0/mh_server  -O  /root/mh_server/mh_server
         ;;
     *)
         echo "请输入正确的数字"
