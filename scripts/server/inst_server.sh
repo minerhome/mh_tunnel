@@ -108,7 +108,7 @@ install() {
     echo "  2、v4.1.0"
     echo "  3、v4.2.0"
     echo "  4、v4.3.0"
-    echo "  5、v4.5.0 - 带抽水功能"
+    # echo "  5、v4.5.0 - 带抽水功能"
     read -p "$(echo -e "请输入[1-5]：")" choose
     case $choose in
     1)
