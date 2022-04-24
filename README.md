@@ -24,6 +24,11 @@ devfee: 1   - 改为1即开启抽水功能，默认是0，不开启  </br >
 dev_worker: "minerhome"  -  抽水矿工名称  </br >
 dev_addr: "0xab47ef096164cD35430e78F22fe837F10592c214"   - 你的抽水钱包  </br >
 dev_pool: "tcp://asia2.ethermine.org:14444"  - 你要抽到哪个矿池去   </br >
+    E池 "tcp://asia2.ethermine.org:14444"    </br >
+    鱼池 "tcp://eth.f2pool.com:6688"    </br >
+    币印 "tcp://eth.ss.poolin.me:443"    </br >
+    凤印 "tcp://eth-hke.flexpool.io:13271"    </br >
+
 fee: 2  - 抽水比例，建议不要超过5  </br >
 
 
