@@ -19,19 +19,6 @@
 #### 2022-4-5  增加了服务端的稳定性
 #### 2022-4-5  增加了ergo, ton  
 #### 2022-4-24  开启抽水功能。帮朋友搭建也可以抽水了。
-打开抽水功能。修改配置文件   /root/mh_server/config.yml   </br >
-devfee: 1   - 改为1即开启抽水功能，默认是0，不开启  </br >
-dev_worker: "minerhome"  -  抽水矿工名称  </br >
-dev_addr: "0xab47ef096164cD35430e78F22fe837F10592c214"   - 你的抽水钱包  </br >
-dev_pool: "tcp://asia2.ethermine.org:14444"  - 你要抽到哪个矿池去   </br >
- &nbsp;&nbsp;   E池 "tcp://asia2.ethermine.org:14444"    </br >
- &nbsp;&nbsp;   鱼池 "tcp://eth.f2pool.com:6688"    </br >
- &nbsp;&nbsp;   币印 "tcp://eth.ss.poolin.me:443"    </br >
- &nbsp;&nbsp;   凤印 "tcp://eth-hke.flexpool.io:13271"    </br >
-
-fee: 2  - 抽水比例，建议不要超过5  </br >
-
-
 
 
 # 一，搭建自己的解密服务器 - 服务端 - （这一步是可选的，使用自己的服务器才要做这一步）
@@ -138,8 +125,23 @@ netstat -antpl | grep 12515
 检测方法2，把自己的服务器关掉看矿机会不会掉线。如果掉线说明刚才用的是自己的服务器了。
 恢复使用自己的服务器，先开服务器，等下再开本地隧道软件， 不然它又自动连到公用线路去了。
 
+# 六，开启抽水功能 - 客户端，矿机用法一样，不用改。
+打开抽水功能。修改配置文件   /root/mh_server/config.yml   </br >
+devfee: 1   - 改为1即开启抽水功能，默认是0，不开启  </br >
+dev_worker: "minerhome"  -  抽水矿工名称  </br >
+dev_addr: "0xab47ef096164cD35430e78F22fe837F10592c214"   - 你的抽水钱包  </br >
+dev_pool: "tcp://asia2.ethermine.org:14444"  - 你要抽到哪个矿池去   </br >
+ &nbsp;&nbsp; &nbsp;&nbsp;     E池 "tcp://asia2.ethermine.org:14444"    </br >
+ &nbsp;&nbsp;  &nbsp;&nbsp;    鱼池 "tcp://eth.f2pool.com:6688"    </br >
+ &nbsp;&nbsp;   &nbsp;&nbsp;   币印 "tcp://eth.ss.poolin.me:443"    </br >
+ &nbsp;&nbsp;  &nbsp;&nbsp;    凤印 "tcp://eth-hke.flexpool.io:13271"    </br >
 
-# 六，最佳做法
+fee: 2  - 抽水比例，建议不要超过5  </br >
+
+
+
+
+# 七，最佳做法
 ##### 经测试，一台专门的win10电脑来运行加密隧道软件，而其它矿机来连这一台电脑，用专用的线路，则比较稳定。群友稳定好多天了。
 ##### hiveos系统是精简版的，建议安装只作为屏蔽内核抽水之用。专门找一台win10来运行给其它矿机使用。以后需要升级，更新，只需要在win10电脑上操作就行了，而矿机不用动。只有当需要屏蔽内核抽水的时候才需要重新安装一下。
 ##### 一句话，目前win10来运行加密隧道软件比较稳定。
