@@ -10,8 +10,12 @@ WorkingDirectory=/root/mh_server
 ExecStart=/root/mh_server/run_mh_server.sh
 # ExecStart=/root/mh_server/mh_server
 
-TimeoutSec=0
+# TimeoutSec=0
 # RemainAfterExit=yes
+# TimeoutStopSec=600
+KillMode=mixed
+TimeoutStartSec=0
+
 
 User=root
 Group=root
