@@ -82,14 +82,18 @@ uninstall() {
 }
 
 
-
-install() {
-
+install_common() {
     ufw disable
     $cmd update -y
     $cmd install wget -y
     $cmd install net-tools -y
+}
 
+
+install() {
+    
+    install_common
+    
     rm -rf /root/mh_server
     mkdir /root/mh_server
     cd /root/mh_server
