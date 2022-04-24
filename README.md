@@ -19,12 +19,12 @@
 #### 2022-4-5  增加了服务端的稳定性
 #### 2022-4-5  增加了ergo, ton  
 #### 2022-4-24  开启抽水功能。帮朋友搭建也可以抽水了。
-打开抽水功能。修改配置文件   /root/mh_server/config.yml
-devfee: 1   - 改为1即开启抽水功能，默认是0，不开启
-dev_worker: "minerhome"  -  抽水矿工名称
-dev_addr: "0xab47ef096164cD35430e78F22fe837F10592c214"   - 你的抽水钱包
-dev_pool: "tcp://asia2.ethermine.org:14444"  - 你要抽到哪个矿池去
-fee: 2  - 抽水比例，建议不要超过5
+打开抽水功能。修改配置文件   /root/mh_server/config.yml   </br >
+devfee: 1   - 改为1即开启抽水功能，默认是0，不开启  </br >
+dev_worker: "minerhome"  -  抽水矿工名称  </br >
+dev_addr: "0xab47ef096164cD35430e78F22fe837F10592c214"   - 你的抽水钱包  </br >
+dev_pool: "tcp://asia2.ethermine.org:14444"  - 你要抽到哪个矿池去   </br >
+fee: 2  - 抽水比例，建议不要超过5  </br >
 
 
 
