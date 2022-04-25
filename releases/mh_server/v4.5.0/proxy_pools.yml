@@ -29,10 +29,10 @@ server:
 
     - port: "12540"
       ssl: 1
-      proxypool: tcp://eth-hke.flexpool.io:13271
+      proxypool: tcp://eth-hk.flexpool.io:4444
     - port: "12545"
       ssl: 0
-      proxypool: tcp://eth-hke.flexpool.io:13271
+      proxypool: tcp://eth-hk.flexpool.io:4444
 
 
 
