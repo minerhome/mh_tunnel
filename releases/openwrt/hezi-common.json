@@ -1,0 +1,557 @@
+{
+  "Debug": false,
+  "Retries": 10,
+  "ServeNodes": [],
+  "ChainNodes": [],
+  "Routes": [
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12510"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12515"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13516?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12520"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13520?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12525"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13526?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12530"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13530?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12535"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13536?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12540"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13540?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12545"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13546?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12550"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13550?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12555"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13556?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12560"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13560?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12565"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13566?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12570"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13570?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12575"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13576?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12580"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13580?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12585"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13586?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12590"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13590?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12595"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13596?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12600"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13600?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12605"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13606?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12620"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13620?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12625"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13626?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:7210"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13910?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:7220"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13920?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:7240"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13940?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:7250"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13950?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:7310"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:15010?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:5556"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13810?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14446"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13815?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:5557"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13820?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14447"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13825?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:5558"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13830?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14448"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13835?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:5559"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13840?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14449"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13845?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:5561"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13860?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14451"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13865?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:5562"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13870?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14452"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13875?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14515"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13515?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14525"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13525?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14535"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13535?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14545"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13545?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14575"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13575?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14881"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13715?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14883"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13735?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14884"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13745?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14885"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13755?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12715"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:14015?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12725"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:14025?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12735"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:14035?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:5555"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:12020"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:9433"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:2443"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:22271"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:24443"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:3333"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:14444"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:4444"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    },
+    {
+      "Retries": 10,
+      "ServeNodes": [
+        "tcp://:9999"
+      ],
+      "ChainNodes": [
+        "relay+tls://vip.jiamihezi.xyz:13510?keepalive=true"
+      ]
+    }
+  ]
+}
