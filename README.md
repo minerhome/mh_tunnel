@@ -109,6 +109,12 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/4.png"></img>
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/14.png"></img>
 
+开源矿工中凤凰的用法 - 隧道
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/20.png"></img>
+开源矿工中凤凰的用法 - SSL直连
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/21.png"></img>
+
+
 # 五，检查有没有走自己的服务器 -（这一步是可选的）
 
 ```
