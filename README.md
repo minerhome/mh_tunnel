@@ -32,6 +32,13 @@
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh)
 ```
 
+&nbsp; 如果没法执行就手动安装
+```
+wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh -O inst_server.sh
+bash inst_server.sh
+```
+
+
 #### 然后重启服务器 - 可到后面第5步去检查安装成功了没有。
 
 
