@@ -113,7 +113,7 @@ install() {
     echo "  3、v4.2.0"
     echo "  4、v4.3.0"
     echo "  5、v4.5.0 - 可开启抽水功能"
-    echo "  6、v4.6.0 - 可开启抽水功能"
+    echo "  6、v4.6.0 - 可开启抽水功能 - 不稳定，不要选这个"
     read -p "$(echo -e "请输入[1-6]：")" choose
     case $choose in
     1)
