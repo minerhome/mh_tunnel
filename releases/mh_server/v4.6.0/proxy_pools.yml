@@ -29,10 +29,10 @@ server:
 
     - port: "12540"
       ssl: 1
-      proxypool: tcp://eth-hk.flexpool.io:4444
+      proxypool: tcp://eth-hke.flexpool.io:13271
     - port: "12545"
       ssl: 0
-      proxypool: tcp://eth-hk.flexpool.io:4444
+      proxypool: tcp://eth-hke.flexpool.io:13271
 
 
 
@@ -79,16 +79,12 @@ server:
       ssl: 0
       proxypool: tcp://asia-eth.2miners.com:2020
 
-
-
-
     - port: "12600"
       ssl: 1
       proxypool: tcp://eth.666pool.com:8558
     - port: "12605"
       ssl: 0
       proxypool: tcp://eth.666pool.com:8558
-
 
     - port: "12620"
       ssl: 1
