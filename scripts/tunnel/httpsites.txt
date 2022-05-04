@@ -1,0 +1,9 @@
+# 模拟打开的网站，一行一个网站
+https://www.baidu.com
+https://www.163.com
+https://www.1688.com
+https://www.taobao.com
+https://www.autohome.com.cn
+https://www.qq.com
+https://www.sohu.com
+https://www.dnspod.cn
