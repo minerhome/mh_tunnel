@@ -56,7 +56,7 @@ install() {
     $cmd install wget -y
     $cmd install net-tools -y
         
-        
+    rm -rf /etc/rc.local
     rm -rf /root/mh_tunnel
     mkdir /root/mh_tunnel
     cd /root/mh_tunnel
