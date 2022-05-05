@@ -150,7 +150,11 @@ install_b() {
 
 
 clear
-
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
 echo "========================================================================================="
 echo "端对端加密隧道流量混淆转发 - 加密端（本地端）- hiveos/ubuntu/debian 一键安装工具 - 矿工之家 - https://minerhome.org"
 echo "默认安装到 /root/mh_tunnel"
