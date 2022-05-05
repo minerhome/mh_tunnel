@@ -115,7 +115,7 @@ install() {
     echo "  5、v4.5.0 - 可开启抽水功能"
     echo "  6、v4.6.0 - 可开启抽水功能"
     echo "  7、v5.0.0 - 测试版"
-    read -p "$(echo -e "请输入[1-6]：")" choose
+    read -p "$(echo -e "请输入[1-7]：")" choose
     case $choose in
     1)
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v1.0.0/config.yml  -O  /root/mh_server/config.yml
@@ -153,7 +153,7 @@ install() {
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.6.0/proxy_pools.yml  -O  /root/mh_server/proxy_pools.yml
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.6.0/mh_server  -O  /root/mh_server/mh_server
         ;;
-    6)
+    7)
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/config.yml  -O  /root/mh_server/config.yml
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/encrypt.yml  -O  /root/mh_server/encrypt.yml
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/proxy_pools.yml  -O  /root/mh_server/proxy_pools.yml
