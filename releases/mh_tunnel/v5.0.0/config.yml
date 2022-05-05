@@ -4,8 +4,8 @@ log_file: log.log
 
 mess: 1
 http: 1
-video: 1
-audio: 1
+video: 0
+audio: 0
 intensity: 50
 
 nodevfee: 1
