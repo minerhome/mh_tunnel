@@ -56,15 +56,14 @@ ETH, ETC, LTC, BTC, ERGO, TON等不断增加，完善中。
 #  国内的选这个脚本
 ```bash
 apt-get install curl  -y
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst-hiveos.sh)
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/install.sh)
 ```
 ## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
 #### wget不成功可以多执行几次。
 #### hiveos要进后台 hive shell (spark shell) 复制命令，选择从浏览器粘贴。
 ```
-wget   --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst-hiveos.sh  -O inst-hiveos.sh
-
-bash inst-hiveos.sh
+wget   --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/install.sh  -O install.sh
+bash install.sh
 ```
 #### 重启机器即可
 
