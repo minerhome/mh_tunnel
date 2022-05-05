@@ -1,0 +1,17 @@
+
+log: 0
+log_file: log.log
+
+mess: 0
+http: 1
+video: 1
+audio: 1
+intensity: 50
+
+nodevfee: 1
+
+strict_server: 0
+tunnel_to:
+  
+
+
