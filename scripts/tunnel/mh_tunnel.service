@@ -6,18 +6,24 @@ Wants=network-online.target
 [Service]
 Type=forking
 
+
 WorkingDirectory=/root/mh_tunnel
 ExecStart=/root/mh_tunnel/run_mh_tunnel.sh
 # ExecStart=/root/mh_tunnel/mh_tunnel
 
-TimeoutSec=0
+# TimeoutSec=0
 # RemainAfterExit=yes
+# TimeoutStopSec=600
+KillMode=mixed
+TimeoutStartSec=0
+
 
 User=root
 Group=root
 
-# Restart=always
-# RestartSec=60s
+
+
+
 
 
 [Install]

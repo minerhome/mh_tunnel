@@ -1,11 +1,10 @@
 #!/bin/bash
-
-sleep 5s
-cd /root/mh_tunnel
-chmod +x /root/mh_tunnel/*
+sleep 10s
 while true; do
+    cd /root/mh_tunnel
+    chmod +x /root/mh_tunnel/*
     ./mh_tunnel
-    sleep 5s
+    sleep 10s
 done
 
 
