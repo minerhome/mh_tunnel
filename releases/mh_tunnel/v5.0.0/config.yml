@@ -2,7 +2,7 @@
 log: 0
 log_file: log.log
 
-mess: 0
+mess: 1
 http: 1
 video: 1
 audio: 1
