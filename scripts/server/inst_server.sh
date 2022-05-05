@@ -174,8 +174,8 @@ install() {
     echo -e "\n" 
     echo -e "\n" 
     echo -e "\n" 
-    echo "正在检查是否安装成功，请耐心等待1分钟......"
-    sleep 30s
+    echo "正在检查是否安装成功，请耐心等待5分钟......"
+    sleep 200s
     check_done
 
 }
