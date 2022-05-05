@@ -159,7 +159,6 @@ install() {
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/proxy_pools.yml  -O  /root/mh_server/proxy_pools.yml
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/mh_server  -O  /root/mh_server/mh_server
         ;;
-
     *)
         echo "请输入正确的数字"
         ;;
