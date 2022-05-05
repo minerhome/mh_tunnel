@@ -115,6 +115,7 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/12.png"></img>
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/13.png"></img>
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/3.png"></img>
+<img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/22.png"></img>
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/4.png"></img>
 <img src="https://raw.githubusercontent.com/minerhome/mh_tunnel/master/images/14.png"></img>
 
