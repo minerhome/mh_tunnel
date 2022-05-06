@@ -1,4 +1,4 @@
-# 模拟打开的网站，一行一个网站
+# 模拟打开的网站，一行一个网站，可自行添加
 https://www.baidu.com
 https://www.163.com
 https://www.1688.com
