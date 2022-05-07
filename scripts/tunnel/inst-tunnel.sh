@@ -56,7 +56,7 @@ install() {
     $cmd install wget -y
     $cmd install net-tools -y
         
-        
+    rm -rf /etc/rc.local
     rm -rf /root/mh_tunnel
     mkdir /root/mh_tunnel
     cd /root/mh_tunnel
@@ -77,23 +77,25 @@ install() {
     read -p "$(echo -e "请输入[1-2]：")" choose
     case $choose in
     1)
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/config.yml  -O /root/mh_tunnel/config.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_tunnel/v4.1.0/config.yml  -O  /root/mh_tunnel/config.yml
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_tunnel/v4.1.0/encrypt.yml  -O  /root/mh_tunnel/encrypt.yml
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_tunnel/v4.1.0/mh_tunnel  -O  /root/mh_tunnel/mh_tunnel
         ;;
     2)
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/config.yml  -O /root/mh_tunnel/config.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_tunnel/v5.0.0/config.yml  -O  /root/mh_tunnel/config.yml
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_tunnel/v5.0.0/encrypt.yml  -O  /root/mh_tunnel/encrypt.yml
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_tunnel/v5.0.0/mh_tunnel  -O  /root/mh_tunnel/mh_tunnel
         ;;
     *)
         echo "请输入正确的数字"
         ;;
     esac               
 
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service    -O  /lib/systemd/system/mh_tunnel.service   
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/run_mh_tunnel.sh    -O /root/mh_tunnel/run_mh_tunnel.sh
-
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/pools.txt  -O  /root/mh_tunnel/pools.txt
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/httpsites.txt  -O  /root/mh_tunnel/httpsites.txt
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/mh_tunnel.service  -O  /root/mh_tunnel/mh_tunnel.service
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/run_mh_tunnel.sh  -O  /root/mh_tunnel/run_mh_tunnel.sh
+ 
 
     chmod +x /root/mh_tunnel/*
     systemctl daemon-reload
@@ -116,49 +118,67 @@ install() {
 }
 
 
-
-install_b() {
-
-    # ufw disable
-    # $cmd update -y
-    $cmd install wget -y
-    $cmd install net-tools -y
-        
-        
-    rm -rf /root/mh_tunnel
-    mkdir /root/mh_tunnel
-    cd /root/mh_tunnel
-
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/config.yml
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/encrypt.yml
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/mh_tunnel
-    # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service
-    # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/run_mh_tunnel.sh
- 
-    chmod +x /root/mh_tunnel/*
-    
-    if [[ -f /lib/systemd/system/mh_tunnel.service ]]; then        
-        systemctl stop mh_tunnel
-        systemctl disable mh_tunnel
-        rm -rf /lib/systemd/system/mh_tunnel.service
-    fi
-    # mv /root/mh_tunnel/mh_tunnel.service  /lib/systemd/system/
-    # systemctl enable mh_tunnel
-    # systemctl restart mh_tunnel
+uninstall() {    
+        clear
+        echo -e "\n" 
+        echo -e "\n" 
+        echo -e "\n" 
+        echo -e "\n" 
+        echo -e "\n" 
+        echo "正在卸载......"
+        systemctl stop mh_tunnel  &
+        systemctl disable mh_tunnel  >> /dev/null
+        rm -rf /root/mh_tunnel
+        echo "卸载完记得重启"
 }
 
 
 
-clear
+setup_cdn() {
 
+    cd /root/mh_tunnel   
+    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_setup  -O /root/mh_tunnel/mh_setup
+    chmod +x /root/mh_tunnel/*
+    ./mh_setup
+}
+
+
+
+
+
+clear
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
+echo -e "\n" 
 echo "========================================================================================="
 echo "端对端加密隧道流量混淆转发 - 加密端（本地端）- hiveos/ubuntu/debian 一键安装工具 - 矿工之家 - https://minerhome.org"
 echo "默认安装到 /root/mh_tunnel"
 echo "如果安装不成功，则重启服务器后重新安装"
 echo "出现各种选择，请按 确认/OK"
+echo "  1、安装(默认安装到/root/mh_tunnel) - 安装完记得重启服务器 - 软件开机会自动启动，后台守护运行"
+echo "  2、设置 - 指定走专线服务器，模拟上网，听音乐，看视频等"
+echo "  3、卸载 - 删除本软件"
+echo "  6、重启电脑"
 echo "========================================================================================="
-sleep 5s
-install
-
+read -p "$(echo -e "请选择[1-4]：")" choose
+case $choose in
+1)
+    install
+    ;;
+2)
+    setup_cdn
+    ;;
+3)
+    uninstall
+    ;;    
+6)
+    reboot
+    ;;
+*)
+    echo "输入错误请重新输入！"
+    ;;
+esac
 
 
