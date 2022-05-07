@@ -86,16 +86,13 @@ netstat -anptl | grep 12510
 没有设置则默认走矿工之家的默认公用服务器。如果你通过上一步已经自己搭建了一个加密服务器，则可以在这里设置。使本地的加密隧道走你自己的服务器。
 #### 目前的设置选项有：
 1，矿机是否开启屏蔽内核抽水   <br />
-2, 矿机是否模拟正常上网          <br />
+2, 矿机是否模拟正常上网，模拟听歌，模拟看视频，以及混淆强度。          <br />
 3，矿机是否使用自己的香港服务器ip         <br />
 ##### win的直接双击运行 “设置” 这个命令。
-##### linux的要输入以下命令
+##### linux的要输入以下命令， 运行相同的一键脚本命令，选择设置。
 ```bash
-# 可直连github的服务器 - 香港服务器上安装选这个
-bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/master/scripts/tunnel/setup.sh)
-
-#  国内的选这个脚本
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/setup_cdn.sh)
+apt-get install curl  -y
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/install.sh)
 ```
 
 
