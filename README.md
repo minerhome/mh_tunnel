@@ -59,13 +59,13 @@ ETH, ETC, LTC, BTC, ERGO, TON等不断增加，完善中。
 #  可以连github的选这个脚本
 ```bash
 apt-get install curl  -y
-bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/install.sh)
+bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/inst-tunnel.sh)
 ```
 
 #  连不上github的选这个脚本 
 ```bash
 apt-get install curl  -y
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/install-cdn.sh)
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst-tunnel-cdn.sh)
 ```
 
 ## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
