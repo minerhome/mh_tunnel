@@ -59,21 +59,21 @@ ETH, ETC, LTC, BTC, ERGO, TON等不断增加，完善中。
 #  可以连github的选这个脚本 - 尽量选这个，多安装几次一般会成功
 ```bash
 apt-get install curl  -y
-bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/inst-tunnel.sh)
+bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/inst_tunnel.sh)
 ```
 
 #  连不上github的选这个脚本 
 ```bash
 apt-get install curl  -y
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst-tunnel-cdn.sh)
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst_tunnel_cdn.sh)
 ```
 
 ## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
 #### wget不成功可以多执行几次。
 #### hiveos要进后台 hive shell (spark shell) 复制命令，选择从浏览器粘贴。
 ```
-wget   --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst-tunnel-cdn.sh  -O inst-tunnel-cdn.sh
-bash inst-tunnel-cdn.sh
+wget   --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst_tunnel_cdn.sh  -O inst_tunnel_cdn.sh
+bash inst_tunnel_cdn.sh
 ```
 #### 重启机器即可
 
