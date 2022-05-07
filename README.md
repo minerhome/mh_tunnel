@@ -55,17 +55,25 @@ ETH, ETC, LTC, BTC, ERGO, TON等不断增加，完善中。
 下载后，双击 前台运行 那个文件就行。
 
 ### Liunx, ubuntu, debian, centos,  hiveos 基本上通用了。- 包括安装，设置，删除
-#  国内的选这个脚本
+
+#  可以连github的选这个脚本
 ```bash
 apt-get install curl  -y
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/install.sh)
+bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/install.sh)
 ```
+
+#  连不上github的选这个脚本 
+```bash
+apt-get install curl  -y
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/install-cdn.sh)
+```
+
 ## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
 #### wget不成功可以多执行几次。
 #### hiveos要进后台 hive shell (spark shell) 复制命令，选择从浏览器粘贴。
 ```
-wget   --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/install.sh  -O install.sh
-bash install.sh
+wget   --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/install-cdn.sh  -O install-cdn.sh
+bash install-cdn.sh
 ```
 #### 重启机器即可
 
