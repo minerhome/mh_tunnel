@@ -177,7 +177,7 @@ case $choose in
     install
     ;;
 2)
-    setup_cdn
+    setup
     ;;
 3)
     uninstall
