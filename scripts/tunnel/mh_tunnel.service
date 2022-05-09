@@ -15,7 +15,7 @@ ExecStart=/root/mh_tunnel/run_mh_tunnel.sh
 # RemainAfterExit=yes
 # TimeoutStopSec=600
 KillMode=mixed
-TimeoutStartSec=10
+TimeoutStartSec=0
 
 
 User=root
