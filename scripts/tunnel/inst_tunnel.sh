@@ -144,6 +144,15 @@ setup_cdn() {
 
 
 
+setup() {
+
+    cd /root/mh_tunnel   
+    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/mh_setup  -O /root/mh_tunnel/mh_setup
+    chmod +x /root/mh_tunnel/*
+    ./mh_setup
+}
+
+
 
 
 clear
