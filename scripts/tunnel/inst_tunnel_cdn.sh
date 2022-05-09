@@ -118,6 +118,7 @@ install() {
 }
 
 
+
 uninstall() {    
         clear
         echo -e "\n" 
@@ -129,8 +130,10 @@ uninstall() {
         systemctl stop mh_tunnel  &
         systemctl disable mh_tunnel  >> /dev/null
         rm -rf /root/mh_tunnel
+        rm -rf /lib/systemd/system/mh_tunnel.service
         echo "卸载完记得重启"
 }
+
 
 
 
