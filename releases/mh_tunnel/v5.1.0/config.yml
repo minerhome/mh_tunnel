@@ -1,5 +1,5 @@
 audio: 0
-http: 1
+http: 0
 httpsites:
 - https://www.baidu.com
 - https://www.163.com
@@ -36,11 +36,9 @@ httpsites:
 intensity: 50
 log: 0
 log_file: log.log
-
 mess: 1
 nodevfee: 1
-
-strict_server: 0
-tunnel_to: 
-
+strict_server: false
+tunnel_to: []
 video: 0
+public_ban: 0
