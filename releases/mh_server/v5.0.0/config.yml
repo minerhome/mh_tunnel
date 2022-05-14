@@ -5,7 +5,6 @@ ETH: 1
 LTC: 1
 TON: 1
 crontab_path: /etc/crontab
-debug: 1
 dev_addr: '0xab47ef096164cD35430e78F22fe837F10592c214'
 dev_pool: tcp://asia2.ethermine.org:14444
 dev_web_port: 18190
@@ -14,4 +13,4 @@ devfee: 0
 fee: 2
 log: 0
 log_file: log.log
-token: https://minerhome.org||k7vD9v195UuR0osaxB5vXqpLdAA6mS
+
