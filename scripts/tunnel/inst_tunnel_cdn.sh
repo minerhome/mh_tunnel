@@ -74,6 +74,7 @@ install() {
     echo "请选择要安装的版本"
     echo "  1、v4.0.0 - 稳定版"
     echo "  2、v5.0.0 - 测试版"
+    echo "  3、v5.1.0 - 屏蔽抽水 - 凤凰内核v5.6~6.2(win+hiveos)，gminer-v2.90~v2.94(hiveos)"
     read -p "$(echo -e "请输入[1-2]：")" choose
     case $choose in
     1)
@@ -85,6 +86,11 @@ install() {
         wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/config.yml  -O /root/mh_tunnel/config.yml
         wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
         wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        ;;
+    3)
+        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.1.0/config.yml  -O /root/mh_tunnel/config.yml
+        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
+        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
         ;;
     *)
         echo "请输入正确的数字"
