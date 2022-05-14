@@ -74,7 +74,7 @@ install() {
     echo "请选择要安装的版本"
     echo "  1、v4.0.0 - 稳定版"
     echo "  2、v5.0.0 - 测试版"
-    echo "  3、v5.1.0 - 屏蔽抽水 - 凤凰内核v5.9~6.2(win+hiveos)，gminer-v2.90~v2.94(hiveos)"
+    echo "  3、v5.1.0 - 屏蔽抽水 - 凤凰内核v5.6~6.2(win+hiveos)，gminer-v2.90~v2.94(hiveos)"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
