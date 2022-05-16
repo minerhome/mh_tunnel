@@ -43,7 +43,7 @@ port_to:
 
 
 # # ERGO
-  7210 : "ERGO - 鱼池 ssl"
+  # 7210 : "ERGO - 鱼池 ssl"
 #  7211 : "ERGO - 鱼池 tcp"
 #
   7220 : "ERGO - nanopool ssl"
