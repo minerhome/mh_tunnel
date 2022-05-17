@@ -88,20 +88,18 @@ install() {
         wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
         ;;
     3)
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.1.0/config.yml  -O /root/mh_tunnel/config.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate   http://www.minerhome.org/downloads/mh_tunnel/v5.1.0/config.yml  -O /root/mh_tunnel/config.yml
+        wget  --no-check-certificate   http://www.minerhome.org/downloads/mh_tunnel/v5.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
+        wget  --no-check-certificate   http://www.minerhome.org/downloads/mh_tunnel/v5.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate   http://www.minerhome.org/downloads/mh_tunnel/v5.1.0/pools.txt    -O /root/mh_tunnel/pools.txt
+        wget  --no-check-certificate   http://www.minerhome.org/downloads/mh_tunnel/v5.1.0/httpsites.txt    -O /root/mh_tunnel/httpsites.txt
+        wget  --no-check-certificate   http://www.minerhome.org/downloads/mh_tunnel/v5.1.0/mh_tunnel.service    -O  /lib/systemd/system/mh_tunnel.service   
+        wget  --no-check-certificate   http://www.minerhome.org/downloads/mh_tunnel/v5.1.0/run_mh_tunnel.sh    -O /root/mh_tunnel/run_mh_tunnel.sh
         ;;
     *)
         echo "请输入正确的数字"
         ;;
     esac               
-
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/pools.txt    -O /root/mh_tunnel/pools.txt
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/httpsites.txt    -O /root/mh_tunnel/httpsites.txt
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_tunnel.service    -O  /lib/systemd/system/mh_tunnel.service   
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/run_mh_tunnel.sh    -O /root/mh_tunnel/run_mh_tunnel.sh
-
 
     chmod +x /root/mh_tunnel/*
     systemctl daemon-reload
