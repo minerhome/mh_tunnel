@@ -65,7 +65,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scr
 #  连不上github的选这个脚本 
 ```bash
 apt-get install curl  -y
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst_tunnel_cdn.sh)
+bash <(curl -s -L http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/inst_tunnel_cn.sh)
 ```
 
 ## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
