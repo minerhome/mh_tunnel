@@ -87,7 +87,7 @@ install() {
         wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
         wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
         ;;
-    3)
+    3)            
         wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/config.yml  -O /root/mh_tunnel/config.yml
         wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
         wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
