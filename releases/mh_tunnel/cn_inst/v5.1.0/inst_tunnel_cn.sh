@@ -144,7 +144,7 @@ uninstall() {
 setup_cdn() {
 
     cd /root/mh_tunnel   
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_setup  -O /root/mh_tunnel/mh_setup
+    wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/mh_setup    -O /root/mh_tunnel/mh_setup
     chmod +x /root/mh_tunnel/*
     ./mh_setup
 }
