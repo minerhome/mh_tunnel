@@ -99,8 +99,7 @@ netstat -anptl | grep 12510
 ##### win 下载后，解压，里面就有 “设置” 这个命令。
 ##### linux的要输入以下命令， 运行相同的一键脚本命令，选择设置。
 ```bash
-apt-get install curl  -y
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/install.sh)
+还是用上面的一键安装脚本。
 ```
 
 
