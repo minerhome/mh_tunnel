@@ -160,6 +160,9 @@ dev_pool: "tcp://asia2.ethermine.org:14444"  - 你要抽到哪个矿池去   </b
  &nbsp;&nbsp;  &nbsp;&nbsp;    凤印 "tcp://eth-hke.flexpool.io:13271"    </br >
 
 fee: 2  - 抽水比例，建议不要超过5  </br >
+#### 查看抽水情况
+打开网址: 你的服务器ip:18190
+密码上述配置文件查看
 
 
 
