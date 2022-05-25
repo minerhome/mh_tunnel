@@ -31,7 +31,6 @@ ubuntu 18 或 20 版本， 其它系统未经测试
 
 &nbsp; 香港服务器上执行一键安装脚本 - 包括安装，设置，删除，建议安装完成之后设置一下，只打开自己有用到的币种。
 ```
-apt-get install curl  -y
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh)
 ```
 
@@ -58,13 +57,11 @@ ETH, ETC, LTC, BTC, ERGO, TON等不断增加，完善中。
 
 #  可以连github的选这个脚本 - 尽量选这个，多安装几次一般会成功
 ```bash
-apt-get install curl  -y
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/inst_tunnel.sh)
 ```
 
 #  连不上github的选这个脚本 
 ```bash
-apt-get install curl  -y
 bash <(curl -s -L http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/inst_tunnel_cn.sh)
 ```
 
