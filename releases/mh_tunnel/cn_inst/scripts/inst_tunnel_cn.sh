@@ -72,10 +72,10 @@ install() {
     echo -e "\n" 
     echo -e "\n" 
     echo "请选择要安装的版本"
-    echo "  1、v4.0.0 - 稳定版"
-    echo "  2、v5.0.0 - 测试版"
-    echo "  3、v5.1.0 - 屏蔽抽水"
-    read -p "$(echo -e "请输入[1-2]：")" choose
+    echo "  1、v4.0.0"
+    echo "  2、v5.0.0"
+    echo "  3、v5.1.0"
+    read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
         wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v4.1.0/config.yml  -O /root/mh_tunnel/config.yml

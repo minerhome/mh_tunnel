@@ -55,23 +55,16 @@ ETH, ETC, LTC, BTC, ERGO, TON等不断增加，完善中。
 
 ### Liunx, ubuntu, debian, centos,  hiveos 基本上通用了。- 包括安装，设置，删除
 
-#  可以连github的选这个脚本 - 尽量选这个，多安装几次一般会成功
+#  一键安装 - 尽量选这个，多安装几次一般会成功
 ```bash
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/inst_tunnel.sh)
 ```
 
-#  连不上github的选这个脚本 
+#  上面实在没办法安装就选这个脚本 
 ```bash
-bash <(curl -s -L http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/inst_tunnel_cn.sh)
+bash <(curl -s -L http://download.minerhome.org/mh_tunnel/cn_inst/scripts/inst_tunnel_cn.sh)
 ```
 
-## 手动安装 - 如果上面的一键脚本不能运行，就下面一步一步手动执行
-#### wget不成功可以多执行几次。
-#### hiveos要进后台 hive shell (spark shell) 复制命令，选择从浏览器粘贴。
-```
-wget   --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/inst_tunnel_cdn.sh  -O inst_tunnel_cdn.sh
-bash inst_tunnel_cdn.sh
-```
 #### 重启机器即可
 
 安装之后自动在后台运行了。矿机只需连接该加密机器就行。
