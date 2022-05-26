@@ -75,26 +75,26 @@ install() {
     echo "  1、v4.0.0"
     echo "  2、v5.0.0"
     echo "  3、v5.1.0"
-    read -p "$(echo -e "请输入[1-2]：")" choose
+    read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/config.yml  -O /root/mh_tunnel/config.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v4.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v4.1.0/config.yml  -O /root/mh_tunnel/config.yml
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v4.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v4.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
         ;;
     2)
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/config.yml  -O /root/mh_tunnel/config.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
-        wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/releases/mh_tunnel/v5.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.0.0/config.yml  -O /root/mh_tunnel/config.yml
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.0.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
         ;;
-    3)
-        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/v5.1.0/config.yml  -O /root/mh_tunnel/config.yml
-        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/v5.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
-        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/v5.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
-        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/v5.1.0/pools.txt    -O /root/mh_tunnel/pools.txt
-        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/v5.1.0/httpsites.txt    -O /root/mh_tunnel/httpsites.txt
-        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/v5.1.0/mh_tunnel.service    -O  /lib/systemd/system/mh_tunnel.service   
-        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/v5.1.0/run_mh_tunnel.sh    -O /root/mh_tunnel/run_mh_tunnel.sh
+    3)            
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/config.yml  -O /root/mh_tunnel/config.yml
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/pools.txt    -O /root/mh_tunnel/pools.txt
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/httpsites.txt    -O /root/mh_tunnel/httpsites.txt
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/mh_tunnel.service    -O  /lib/systemd/system/mh_tunnel.service   
+        wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/run_mh_tunnel.sh    -O /root/mh_tunnel/run_mh_tunnel.sh
         ;;
     *)
         echo "请输入正确的数字"
@@ -144,7 +144,7 @@ uninstall() {
 setup_cdn() {
 
     cd /root/mh_tunnel   
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_setup  -O /root/mh_tunnel/mh_setup
+    wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/cn_inst/v5.1.0/mh_setup    -O /root/mh_tunnel/mh_setup
     chmod +x /root/mh_tunnel/*
     ./mh_setup
 }

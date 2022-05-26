@@ -1,5 +1,0 @@
-#!/bin/bash
-##!/bin/sh -e
-cd /root/mh_tunnel
-nohup /root/mh_tunnel/mh_tunnel &
-exit 0
