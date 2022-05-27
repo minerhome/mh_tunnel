@@ -72,34 +72,26 @@ install() {
     echo -e "\n" 
     echo -e "\n" 
     echo "请选择要安装的版本"
-    echo "  1、v4.0.0"
-    echo "  2、v5.0.0"
-    echo "  3、v5.1.0"
+    echo "  1、v5.1.0"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
-    1)
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v4.1.0/config.yml  -O /root/mh_tunnel/config.yml
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v4.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v4.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
-        ;;
-    2)
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.0.0/config.yml  -O /root/mh_tunnel/config.yml
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.0.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
-        ;;
-    3)            
+    1)            
         wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.1.0/config.yml  -O /root/mh_tunnel/config.yml
         wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.1.0/encrypt.yml    -O /root/mh_tunnel/encrypt.yml
         wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.1.0/pools.txt    -O /root/mh_tunnel/pools.txt
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.1.0/httpsites.txt    -O /root/mh_tunnel/httpsites.txt
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.1.0/mh_tunnel.service    -O  /lib/systemd/system/mh_tunnel.service   
-        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v5.1.0/run_mh_tunnel.sh    -O /root/mh_tunnel/run_mh_tunnel.sh
         ;;
     *)
         echo "请输入正确的数字"
         ;;
     esac               
+
+
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/mh_tunnel/scripts/tunnel/pools.txt  -O  /root/mh_tunnel/pools.txt
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/mh_tunnel/scripts/tunnel/httpsites.txt  -O  /root/mh_tunnel/httpsites.txt
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/mh_tunnel/scripts/tunnel/run_mh_tunnel.sh  -O  /root/mh_tunnel/run_mh_tunnel.sh
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/mh_tunnel/scripts/tunnel/mh_tunnel.service  -O  /lib/systemd/system/mh_tunnel.service
+    
+
 
     chmod +x /root/mh_tunnel/*
     systemctl daemon-reload
