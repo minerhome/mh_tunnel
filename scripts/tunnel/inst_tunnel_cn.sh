@@ -86,10 +86,10 @@ install() {
     esac               
 
 
-    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/mh_tunnel/scripts/tunnel/pools.txt  -O  /root/mh_tunnel/pools.txt
-    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/mh_tunnel/scripts/tunnel/httpsites.txt  -O  /root/mh_tunnel/httpsites.txt
-    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/mh_tunnel/scripts/tunnel/run_mh_tunnel.sh  -O  /root/mh_tunnel/run_mh_tunnel.sh
-    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/mh_tunnel/scripts/tunnel/mh_tunnel.service  -O  /lib/systemd/system/mh_tunnel.service
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/scripts/tunnel/pools.txt  -O  /root/mh_tunnel/pools.txt
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/scripts/tunnel/httpsites.txt  -O  /root/mh_tunnel/httpsites.txt
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/scripts/tunnel/run_mh_tunnel.sh  -O  /root/mh_tunnel/run_mh_tunnel.sh
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/scripts/tunnel/mh_tunnel.service  -O  /lib/systemd/system/mh_tunnel.service
     
 
 
