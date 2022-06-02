@@ -34,7 +34,7 @@ ubuntu 18 或 20 版本， 其它系统未经测试
 bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh)
 ```
 
-&nbsp; 如果没法执行就手动安装
+&nbsp; 如果没法执行就手动安装 - 两行命令
 ```
 wget  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/server/inst_server.sh -O inst_server.sh
 bash inst_server.sh
