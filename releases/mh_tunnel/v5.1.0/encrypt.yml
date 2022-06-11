@@ -101,3 +101,11 @@ port_to:
   12725 : "LTC 莱特币 专业机 - 蚂蚁 tcp"
   12735 : "LTC 莱特币 专业机 - 币印 tcp"
 
+
+# RVN  专业机
+  12800 : "RVN 渡鸦币 - 2miners ssl"
+  12810 : "RVN 渡鸦币 - E池 ssl"
+  12820 : "RVN 渡鸦币 - 鱼池 ssl"
+
+
+
