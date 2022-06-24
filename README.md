@@ -62,7 +62,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scr
 
 #  上面实在没办法安装就选这个脚本 
 ```bash
-bash <(curl -s -L http://down.mhsvip.xyz/mh_tunnel/scripts/tunnel/inst_tunnel_cn.sh)
+bash <(curl -s -L down.minerhome.org/mh_tunnel/scripts/tunnel/inst_tunnel_cn.sh)
 ```
 
 #### 重启机器即可
