@@ -140,12 +140,13 @@ uninstall() {
 
 
 
-setup_cdn() {
+setup_cn() {
 
     cd /root/mh_tunnel   
-    wget  --no-check-certificate   http://down.minerhome.org/mh_tunnel/scripts/tunnel/mh_setup    -O /root/mh_tunnel/mh_setup
+    ./mh_tunnel --setup
+    # wget  --no-check-certificate   http://down.minerhome.org/mh_tunnel/scripts/tunnel/mh_setup    -O /root/mh_tunnel/mh_setup
     chmod +x /root/mh_tunnel/*
-    ./mh_setup
+    # ./mh_setup
 }
 
 
@@ -174,7 +175,7 @@ case $choose in
     install
     ;;
 2)
-    setup_cdn
+    setup_cn
     ;;
 3)
     uninstall

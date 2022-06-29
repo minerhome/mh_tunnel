@@ -146,22 +146,22 @@ uninstall() {
 
 
 
-setup_cdn() {
-
+setup_cn() {
     cd /root/mh_tunnel   
-    wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_setup  -O /root/mh_tunnel/mh_setup
-    chmod +x /root/mh_tunnel/*
-    ./mh_setup
+    ./mh_tunnel --setup
+    # wget  --no-check-certificate   https://cdn.jsdelivr.net/gh/minerhome/mh_tunnel@master/scripts/tunnel/mh_setup  -O /root/mh_tunnel/mh_setup
+    # chmod +x /root/mh_tunnel/*
+    # ./mh_setup
 }
 
 
 
 setup() {
-
     cd /root/mh_tunnel   
-    wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/mh_setup  -O /root/mh_tunnel/mh_setup
-    chmod +x /root/mh_tunnel/*
-    ./mh_setup
+    ./mh_tunnel --setup
+#     wget  --no-check-certificate  https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scripts/tunnel/mh_setup  -O /root/mh_tunnel/mh_setup
+#     chmod +x /root/mh_tunnel/*
+#     ./mh_setup
 }
 
 
