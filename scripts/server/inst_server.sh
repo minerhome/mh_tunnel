@@ -115,7 +115,7 @@ install() {
     echo "  5、v4.5.0 - 可开启抽水功能"
     echo "  6、v4.6.0 - 可开启抽水功能"
     echo "  7、v5.0.0 - 可开启抽水功能"
-    echo "  8、v6.0.0 - eth可开抽水"
+    echo "  8、v6.1.0 - eth可开抽水"
     read -p "$(echo -e "请输入[1-7]：")" choose
     case $choose in
     1)
@@ -161,7 +161,7 @@ install() {
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/mh_server  -O  /root/mh_server/mh_server
         ;;
     8)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v6.0.0/mh_server  -O  /root/mh_server/mh_server
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v6.1.0/mh_server  -O  /root/mh_server/mh_server
         ;;
     *)
         echo "请输入正确的数字"
