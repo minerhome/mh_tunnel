@@ -83,7 +83,7 @@ install() {
         ;;
 
     2)           
-        wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/releases/mh_tunnel/v6.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/releases/mh_tunnel/v6.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
         ;;
 
 
