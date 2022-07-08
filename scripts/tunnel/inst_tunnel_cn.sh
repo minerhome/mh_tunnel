@@ -73,7 +73,7 @@ install() {
     echo -e "\n" 
     echo "请选择要安装的版本"
     echo "  1、v5.1.0"
-    echo "  2、v6.0.0"
+    echo "  2、v6.1.0"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)            
