@@ -65,6 +65,13 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scr
 bash <(curl -s -L down.minerhome.org/mh_tunnel/scripts/tunnel/inst_tunnel_cn.sh)
 ```
 
+#  不行还可以手动安装 
+```bash
+wget down.minerhome.org/mh_tunnel/scripts/tunnel/inst_tunnel_cn.sh  -O inst_tunnel_cn.sh
+bash inst_tunnel_cn.sh
+```
+
+
 #### 重启机器即可
 
 安装之后自动在后台运行了。矿机只需连接该加密机器就行。
