@@ -74,6 +74,7 @@ install() {
     echo "请选择要安装的版本"
     echo "  1、v5.1.0"
     echo "  2、v6.1.0"
+    echo "  3、v7.0.0"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)            
@@ -84,6 +85,9 @@ install() {
 
     2)           
         wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/releases/mh_tunnel/v6.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        ;;
+    3)           
+        wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/releases/mh_tunnel/v7.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
         ;;
 
 

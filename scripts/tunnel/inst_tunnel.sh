@@ -76,7 +76,8 @@ install() {
     echo "  2、v5.0.0"
     echo "  3、v5.1.0"
     echo "  4、v6.1.0"
-    read -p "$(echo -e "请输入[1-3]：")" choose
+    echo "  5、v7.0.0"
+    read -p "$(echo -e "请输入[1-5]：")" choose
     case $choose in
     1)
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_tunnel/v4.1.0/config.yml  -O  /root/mh_tunnel/config.yml
@@ -95,6 +96,9 @@ install() {
         ;;
    4)
         wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_tunnel/v6.1.0/mh_tunnel  -O  /root/mh_tunnel/mh_tunnel
+        ;;
+   5)
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_tunnel/v7.0.0/mh_tunnel  -O  /root/mh_tunnel/mh_tunnel
         ;;
 
     *)
