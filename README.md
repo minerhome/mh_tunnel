@@ -147,7 +147,7 @@ netstat -antpl | grep 12515
 #### 客户端 - 矿机用法一样，要设置一下，让矿机走你的这台服务器的IP（运行上面的一键脚本去设置IP）
 #### 服务端 - 修改服务端的配置文件。
 打开抽水功能。修改配置文件   /root/mh_server/config.yml   </br >
-devfee: 1   - 改为1即开启抽水功能，默认是0，不开启  </br >
+devfee: true   - 改为true即开启抽水功能，默认是false，不开启  </br >
 dev_worker: "minerhome"  -  抽水矿工名称  </br >
 dev_addr: "0xab47ef096164cD35430e78F22fe837F10592c214"   - 你的抽水钱包  </br >
 dev_pool: "tcp://asia2.ethermine.org:14444"  - 你要抽到哪个矿池去   </br >
@@ -160,7 +160,7 @@ fee: 2  - 抽水比例，建议不要超过5  </br >
 #### 查看抽水情况
 打开网址: 你的服务器ip:18190
 密码上述配置文件查看
-
+提示, 冒号后面都有空格.
 
 
 
