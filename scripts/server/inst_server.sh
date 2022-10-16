@@ -108,29 +108,15 @@ install() {
     echo -e "\n" 
     echo -e "\n" 
     echo "请选择要安装的版本"
-    echo "  1、v4.6.0 - 可开启抽水功能"
-    echo "  2、v5.0.0 - 可开启抽水功能"
-    echo "  3、v6.1.0 - eth可开抽水"
-    echo "  4、v7.0.0 - eth可开抽水"
+    echo "  1、v6.1.10 - 可开抽水"
+    echo "  2、v7.1.10 - 可开抽水"
     read -p "$(echo -e "请输入[1-4]：")" choose
     case $choose in
     1)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.6.0/config.yml  -O  /root/mh_server/config.yml
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.6.0/encrypt.yml  -O  /root/mh_server/encrypt.yml
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.6.0/proxy_pools.yml  -O  /root/mh_server/proxy_pools.yml
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v4.6.0/mh_server  -O  /root/mh_server/mh_server
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v6.1.10/mh_server  -O  /root/mh_server/mh_server
         ;;
     2)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/config.yml  -O  /root/mh_server/config.yml
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/encrypt.yml  -O  /root/mh_server/encrypt.yml
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/proxy_pools.yml  -O  /root/mh_server/proxy_pools.yml
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v5.0.0/mh_server  -O  /root/mh_server/mh_server
-        ;;
-    3)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v6.1.0/mh_server  -O  /root/mh_server/mh_server
-        ;;
-    4)
-        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v7.0.0/mh_server  -O  /root/mh_server/mh_server
+        wget  --no-check-certificate https://raw.githubusercontent.com/minerhome/mh_tunnel/main/releases/mh_server/v7.1.10/mh_server  -O  /root/mh_server/mh_server
         ;;
 
     *)
