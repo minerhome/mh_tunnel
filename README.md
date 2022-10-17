@@ -145,22 +145,25 @@ netstat -antpl | grep 12515
 
 # 六，开启抽水功能
 #### 客户端 - 矿机用法一样，要设置一下，让矿机走你的这台服务器的IP（运行上面的一键脚本去设置IP）
-#### 服务端 - 修改服务端的配置文件。
+#### 服务端 - 修改服务端的配置文件。-- 服务端跟客户端的版本要对应.
 打开抽水功能。修改配置文件   /root/mh_server/config.yml   </br >
-devfee: true   - 改为true即开启抽水功能，默认是false，不开启  </br >
 dev_worker: "minerhome"  -  抽水矿工名称  </br >
-dev_addr: "0xab47ef096164cD35430e78F22fe837F10592c214"   - 你的抽水钱包  </br >
-dev_pool: "tcp://asia2.ethermine.org:14444"  - 你要抽到哪个矿池去   </br >
- &nbsp;&nbsp; &nbsp;&nbsp;     E池 "tcp://asia2.ethermine.org:14444"    </br >
- &nbsp;&nbsp;  &nbsp;&nbsp;    鱼池 "tcp://eth.f2pool.com:6688"    </br >
- &nbsp;&nbsp;   &nbsp;&nbsp;   币印 "tcp://eth.ss.poolin.me:443"    </br >
- &nbsp;&nbsp;  &nbsp;&nbsp;    凤印 "tcp://eth-hke.flexpool.io:13271"    </br >
+devfee:         - 抽水设置
+    - port: 12630   - 要抽水的端口, 不写表示不抽
+      type: ethw    - etc, ethw, eth,  erg, rvn, eth
+      fee: 0        -  抽多少, 0表示不抽
+      wallet: "0xab47ef096164cD35430e78F22fe837F10592c214"    - 抽水钱包, 开抽水一定要写钱包
 
-fee: 2  - 抽水比例，建议不要超过5  </br >
-#### 查看抽水情况
-打开网址: 你的服务器ip:18190
-密码上述配置文件查看
-提示, 冒号后面都有空格.
+    - port: 14881   - 要抽水的端口
+      type: btc     - etc, ethw, erg, rvn, eth
+      fee: 0        -  抽多少, 0表示不抽
+      wallet: viponedream    -  抽水钱包, 开抽水一定要写钱包
+
+    - port: 16500
+      fee: 0
+      type: kaspa        - 目前kasps抽水不太稳定
+      devpool: ""
+      wallet: kaspa:qqz9yn23pm76spac30mmtyg48encg40zusxe92ccvnwm2djps5l52cyw8r0t6
 
 
 
