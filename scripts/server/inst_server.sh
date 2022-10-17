@@ -110,7 +110,7 @@ install() {
     echo -e "\n" 
     echo "请选择要安装的版本"
     echo "  1、v6.1.10 - 2022-10-17更新"
-    echo "  2、v7.1.10"
+    echo "  2、v7.1.10 - 未更新"
     read -p "$(echo -e "请输入[1-4]：")" choose
     case $choose in
     1)
