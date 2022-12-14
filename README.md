@@ -62,12 +62,12 @@ bash <(curl -s -L https://raw.githubusercontent.com/minerhome/mh_tunnel/main/scr
 
 #  上面实在没办法安装就选这个脚本 
 ```bash
-bash <(curl -s -L down.minerhome.org/mh_tunnel/scripts/tunnel/inst_tunnel_cn.sh)
+bash <(curl -s -L download.minerhome.org/mh_tunnel/scripts/tunnel/inst_tunnel_cn.sh)
 ```
 
 #  不行还可以手动安装 
 ```bash
-wget down.minerhome.org/mh_tunnel/scripts/tunnel/inst_tunnel_cn.sh  -O inst_tunnel_cn.sh
+wget download.minerhome.org/mh_tunnel/scripts/tunnel/inst_tunnel_cn.sh  -O inst_tunnel_cn.sh
 bash inst_tunnel_cn.sh
 ```
 
