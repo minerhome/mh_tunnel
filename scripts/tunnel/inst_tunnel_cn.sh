@@ -62,10 +62,10 @@ install() {
     cd /root/mh_tunnel
 
 
-    wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/scripts/tunnel/pools.txt  -O  /root/mh_tunnel/pools.txt
-    wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/scripts/tunnel/httpsites.txt  -O  /root/mh_tunnel/httpsites.txt
-    wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/scripts/tunnel/run_mh_tunnel.sh  -O  /root/mh_tunnel/run_mh_tunnel.sh
-    wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/scripts/tunnel/mh_tunnel.service  -O  /lib/systemd/system/mh_tunnel.service
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/scripts/tunnel/pools.txt  -O  /root/mh_tunnel/pools.txt
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/scripts/tunnel/httpsites.txt  -O  /root/mh_tunnel/httpsites.txt
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/scripts/tunnel/run_mh_tunnel.sh  -O  /root/mh_tunnel/run_mh_tunnel.sh
+    wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/scripts/tunnel/mh_tunnel.service  -O  /lib/systemd/system/mh_tunnel.service
     
 
     chmod +x /root/mh_tunnel/*
@@ -89,10 +89,10 @@ install() {
     read -p "$(echo -e "请输入[1-2]：")" choose
     case $choose in
     1)           
-        wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/releases/mh_tunnel/v6.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v6.1.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
         ;;
     2)           
-        wget  --no-check-certificate  http://down.minerhome.org/mh_tunnel/releases/mh_tunnel/v7.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
+        wget  --no-check-certificate  http://download.minerhome.org/mh_tunnel/releases/mh_tunnel/v7.0.0/mh_tunnel    -O /root/mh_tunnel/mh_tunnel
         ;;
     *)
         echo "请输入正确的数字"
@@ -141,7 +141,7 @@ setup_cn() {
 
     cd /root/mh_tunnel   
     ./mh_tunnel --setup
-    # wget  --no-check-certificate   http://down.minerhome.org/mh_tunnel/scripts/tunnel/mh_setup    -O /root/mh_tunnel/mh_setup
+    # wget  --no-check-certificate   http://download.minerhome.org/mh_tunnel/scripts/tunnel/mh_setup    -O /root/mh_tunnel/mh_setup
     chmod +x /root/mh_tunnel/*
     # ./mh_setup
 }
