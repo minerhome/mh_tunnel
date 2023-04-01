@@ -1,6 +1,0 @@
-log: 0
-log_file: log.log
-mess: 0
-nodevfee: 0
-strict_server: false
-tunnel_to: []
